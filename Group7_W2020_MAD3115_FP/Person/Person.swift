@@ -32,5 +32,7 @@ class Person
                return Date.dateDifference(birthYear: self.birthDate!)
            }
        }
-    
+    var mobileNumber : String
+    var emailId : String
+    var userName : String
 }
