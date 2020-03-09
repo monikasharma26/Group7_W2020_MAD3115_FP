@@ -39,7 +39,11 @@ class Person
     var vehicleDictionary : Dictionary<Int, Vehicle>?
     init(id: String, firstName: String, lastName: String, gender: String, birthDate: Int, mobileNumber: String, emailId: String, userName: String, password: String) throws
     {
-        
+        self.id = id
+        self.firstName = firstName
+        self.lastName = lastName
+        self.gender = gender
+        self.birthDate = birthDate
     }
     
     
