@@ -23,4 +23,14 @@ class Person
                     return "\(firstName) \(lastName)"
                     }
     }
+    var gender :  String
+    var birthDate : Int?
+    var age: Int
+       {
+           get
+           {
+               return Date.dateDifference(birthYear: self.birthDate!)
+           }
+       }
+    
 }
