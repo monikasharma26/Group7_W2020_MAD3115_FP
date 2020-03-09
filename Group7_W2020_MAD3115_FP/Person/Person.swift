@@ -45,6 +45,11 @@ class Person
         self.gender = gender
         self.birthDate = birthDate
     }
+    guard( mobileNumber.isvalidPhoneNumber() ) else {
+        throw CustomerError.mobileInvalid
+    }
+    self.mobileNumber = mobileNumber
+    
     
     
     
