@@ -37,4 +37,11 @@ class Person
     var userName : String
     var password : String
     var vehicleDictionary : Dictionary<Int, Vehicle>?
+    init(id: String, firstName: String, lastName: String, gender: String, birthDate: Int, mobileNumber: String, emailId: String, userName: String, password: String) throws
+    {
+        
+    }
+    
+    
+    
 }
