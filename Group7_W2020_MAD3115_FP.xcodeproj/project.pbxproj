@@ -24,6 +24,7 @@
 		9BE8C64F2417067F00D0A237 /* VehicleRentM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE8C64E2417067F00D0A237 /* VehicleRentM.swift */; };
 		9BE8C654241706CB00D0A237 /* CustomerErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE8C653241706CB00D0A237 /* CustomerErrors.swift */; };
 		9BE8C6572417076700D0A237 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE8C6562417076700D0A237 /* Date+Extension.swift */; };
+		9BE8C6592417079A00D0A237 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE8C6582417079A00D0A237 /* Int+Extension.swift */; };
 		CEEC78D42416F12A00757554 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC78D32416F12A00757554 /* AppDelegate.swift */; };
 		CEEC78D62416F12A00757554 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC78D52416F12A00757554 /* SceneDelegate.swift */; };
 		CEEC78D82416F12A00757554 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC78D72416F12A00757554 /* ViewController.swift */; };
@@ -50,6 +51,7 @@
 		9BE8C64E2417067F00D0A237 /* VehicleRentM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleRentM.swift; sourceTree = "<group>"; };
 		9BE8C653241706CB00D0A237 /* CustomerErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerErrors.swift; sourceTree = "<group>"; };
 		9BE8C6562417076700D0A237 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		9BE8C6582417079A00D0A237 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		CEEC78D02416F12A00757554 /* Group7_W2020_MAD3115_FP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Group7_W2020_MAD3115_FP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEC78D32416F12A00757554 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEEC78D52416F12A00757554 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				9BE8C6562417076700D0A237 /* Date+Extension.swift */,
+				9BE8C6582417079A00D0A237 /* Int+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				9BE8C654241706CB00D0A237 /* CustomerErrors.swift in Sources */,
 				9BE8C64D2417064800D0A237 /* VehicleM.swift in Sources */,
 				9BE8C64F2417067F00D0A237 /* VehicleRentM.swift in Sources */,
+				9BE8C6592417079A00D0A237 /* Int+Extension.swift in Sources */,
 				9BE8C646241704B700D0A237 /* DataSource.swift in Sources */,
 				9BE8C6362416F71200D0A237 /* Vehicle.swift in Sources */,
 				9BE8C6572417076700D0A237 /* Date+Extension.swift in Sources */,
