@@ -18,6 +18,8 @@
 		9BE8C641241703CA00D0A237 /* VehicleRent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE8C640241703CA00D0A237 /* VehicleRent.swift */; };
 		9BE8C6442417046B00D0A237 /* IDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE8C6432417046B00D0A237 /* IDisplay.swift */; };
 		9BE8C646241704B700D0A237 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE8C645241704B700D0A237 /* DataSource.swift */; };
+		9BE8C6492417060300D0A237 /* BaseCustomerM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE8C6482417060300D0A237 /* BaseCustomerM.swift */; };
+		9BE8C64B2417061600D0A237 /* PersonM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE8C64A2417061600D0A237 /* PersonM.swift */; };
 		CEEC78D42416F12A00757554 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC78D32416F12A00757554 /* AppDelegate.swift */; };
 		CEEC78D62416F12A00757554 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC78D52416F12A00757554 /* SceneDelegate.swift */; };
 		CEEC78D82416F12A00757554 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC78D72416F12A00757554 /* ViewController.swift */; };
@@ -38,6 +40,8 @@
 		9BE8C640241703CA00D0A237 /* VehicleRent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleRent.swift; sourceTree = "<group>"; };
 		9BE8C6432417046B00D0A237 /* IDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDisplay.swift; sourceTree = "<group>"; };
 		9BE8C645241704B700D0A237 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		9BE8C6482417060300D0A237 /* BaseCustomerM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCustomerM.swift; sourceTree = "<group>"; };
+		9BE8C64A2417061600D0A237 /* PersonM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonM.swift; sourceTree = "<group>"; };
 		CEEC78D02416F12A00757554 /* Group7_W2020_MAD3115_FP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Group7_W2020_MAD3115_FP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEC78D32416F12A00757554 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEEC78D52416F12A00757554 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +102,15 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		9BE8C647241705CB00D0A237 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9BE8C6482417060300D0A237 /* BaseCustomerM.swift */,
+				9BE8C64A2417061600D0A237 /* PersonM.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		CEEC78C72416F12A00757554 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +130,7 @@
 		CEEC78D22416F12A00757554 /* Group7_W2020_MAD3115_FP */ = {
 			isa = PBXGroup;
 			children = (
+				9BE8C647241705CB00D0A237 /* Models */,
 				9BE8C6422417042900D0A237 /* Utility */,
 				9BE8C63F2417037F00D0A237 /* Rent */,
 				9BE8C6122416F6A300D0A237 /* Vehicle */,
@@ -222,6 +236,7 @@
 				9BE8C646241704B700D0A237 /* DataSource.swift in Sources */,
 				9BE8C6362416F71200D0A237 /* Vehicle.swift in Sources */,
 				9BE8C63A2416F89F00D0A237 /* MotoCycle.swift in Sources */,
+				9BE8C6492417060300D0A237 /* BaseCustomerM.swift in Sources */,
 				CEEC78D82416F12A00757554 /* ViewController.swift in Sources */,
 				9BE8C60D2416F5D000D0A237 /* Customer.swift in Sources */,
 				9BE8C6112416F67A00D0A237 /* Owner.swift in Sources */,
@@ -230,6 +245,7 @@
 				9BE8C6442417046B00D0A237 /* IDisplay.swift in Sources */,
 				9BE8C6382416F75700D0A237 /* Car.swift in Sources */,
 				9BE8C60F2416F61000D0A237 /* Driver.swift in Sources */,
+				9BE8C64B2417061600D0A237 /* PersonM.swift in Sources */,
 				9BE8C60B2416F58600D0A237 /* Person.swift in Sources */,
 				9BE8C63E2417034500D0A237 /* VehicleType.swift in Sources */,
 				CEEC78D62416F12A00757554 /* SceneDelegate.swift in Sources */,
