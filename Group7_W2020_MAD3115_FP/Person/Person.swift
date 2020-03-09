@@ -15,5 +15,6 @@ enum Gender : String
 import Foundation
 class Person
 {
-    
+    var id : String
+    var firstName: String
 }
