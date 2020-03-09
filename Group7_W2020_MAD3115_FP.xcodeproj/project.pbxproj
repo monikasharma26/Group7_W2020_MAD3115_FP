@@ -12,6 +12,7 @@
 		9BE8C60F2416F61000D0A237 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE8C60E2416F61000D0A237 /* Driver.swift */; };
 		9BE8C6112416F67A00D0A237 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE8C6102416F67A00D0A237 /* Owner.swift */; };
 		9BE8C6362416F71200D0A237 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE8C6352416F71200D0A237 /* Vehicle.swift */; };
+		9BE8C6382416F75700D0A237 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE8C6372416F75700D0A237 /* Car.swift */; };
 		CEEC78D42416F12A00757554 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC78D32416F12A00757554 /* AppDelegate.swift */; };
 		CEEC78D62416F12A00757554 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC78D52416F12A00757554 /* SceneDelegate.swift */; };
 		CEEC78D82416F12A00757554 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC78D72416F12A00757554 /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 		9BE8C60E2416F61000D0A237 /* Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
 		9BE8C6102416F67A00D0A237 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		9BE8C6352416F71200D0A237 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		9BE8C6372416F75700D0A237 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		CEEC78D02416F12A00757554 /* Group7_W2020_MAD3115_FP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Group7_W2020_MAD3115_FP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEC78D32416F12A00757554 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEEC78D52416F12A00757554 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				9BE8C6352416F71200D0A237 /* Vehicle.swift */,
+				9BE8C6372416F75700D0A237 /* Car.swift */,
 			);
 			path = Vehicle;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				9BE8C60D2416F5D000D0A237 /* Customer.swift in Sources */,
 				9BE8C6112416F67A00D0A237 /* Owner.swift in Sources */,
 				CEEC78D42416F12A00757554 /* AppDelegate.swift in Sources */,
+				9BE8C6382416F75700D0A237 /* Car.swift in Sources */,
 				9BE8C60F2416F61000D0A237 /* Driver.swift in Sources */,
 				9BE8C60B2416F58600D0A237 /* Person.swift in Sources */,
 				CEEC78D62416F12A00757554 /* SceneDelegate.swift in Sources */,
