@@ -56,15 +56,31 @@
 		CEEC78D22416F12A00757554 /* Group7_W2020_MAD3115_FP */ = {
 			isa = PBXGroup;
 			children = (
-				CEEC78D32416F12A00757554 /* AppDelegate.swift */,
-				CEEC78D52416F12A00757554 /* SceneDelegate.swift */,
-				CEEC78D72416F12A00757554 /* ViewController.swift */,
-				CEEC78D92416F12A00757554 /* Main.storyboard */,
-				CEEC78DC2416F12D00757554 /* Assets.xcassets */,
-				CEEC78DE2416F12D00757554 /* LaunchScreen.storyboard */,
+				CEEC78E82416F1DE00757554 /* Images */,
+				CEEC78E72416F19C00757554 /* ViewController */,
 				CEEC78E12416F12D00757554 /* Info.plist */,
 			);
 			path = Group7_W2020_MAD3115_FP;
+			sourceTree = "<group>";
+		};
+		CEEC78E72416F19C00757554 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CEEC78D32416F12A00757554 /* AppDelegate.swift */,
+				CEEC78DE2416F12D00757554 /* LaunchScreen.storyboard */,
+				CEEC78D92416F12A00757554 /* Main.storyboard */,
+				CEEC78D72416F12A00757554 /* ViewController.swift */,
+				CEEC78D52416F12A00757554 /* SceneDelegate.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CEEC78E82416F1DE00757554 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CEEC78DC2416F12D00757554 /* Assets.xcassets */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
