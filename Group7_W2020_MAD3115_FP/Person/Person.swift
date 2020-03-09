@@ -49,8 +49,18 @@ class Person
         throw CustomerError.mobileInvalid
     }
     self.mobileNumber = mobileNumber
+    if emailId.isValidEmail() {
+                          self.emailId = emailId
+                      }
+                       else
+                        { throw CustomerError.emailInvalid   }
+        
+        self.userName = userName
+        self.password = password
+        
+    }
     
     
     
     
-}
+
