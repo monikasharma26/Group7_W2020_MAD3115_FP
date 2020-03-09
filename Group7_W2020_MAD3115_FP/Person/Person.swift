@@ -35,4 +35,6 @@ class Person
     var mobileNumber : String
     var emailId : String
     var userName : String
+    var password : String
+    var vehicleDictionary : Dictionary<Int, Vehicle>?
 }
