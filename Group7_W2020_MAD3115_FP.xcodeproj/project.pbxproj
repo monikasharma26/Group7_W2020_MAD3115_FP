@@ -15,6 +15,7 @@
 		9BE8C6382416F75700D0A237 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE8C6372416F75700D0A237 /* Car.swift */; };
 		9BE8C63A2416F89F00D0A237 /* MotoCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE8C6392416F89F00D0A237 /* MotoCycle.swift */; };
 		9BE8C63E2417034500D0A237 /* VehicleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE8C63D2417034500D0A237 /* VehicleType.swift */; };
+		9BE8C641241703CA00D0A237 /* VehicleRent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE8C640241703CA00D0A237 /* VehicleRent.swift */; };
 		CEEC78D42416F12A00757554 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC78D32416F12A00757554 /* AppDelegate.swift */; };
 		CEEC78D62416F12A00757554 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC78D52416F12A00757554 /* SceneDelegate.swift */; };
 		CEEC78D82416F12A00757554 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC78D72416F12A00757554 /* ViewController.swift */; };
@@ -32,6 +33,7 @@
 		9BE8C6372416F75700D0A237 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		9BE8C6392416F89F00D0A237 /* MotoCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotoCycle.swift; sourceTree = "<group>"; };
 		9BE8C63D2417034500D0A237 /* VehicleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleType.swift; sourceTree = "<group>"; };
+		9BE8C640241703CA00D0A237 /* VehicleRent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleRent.swift; sourceTree = "<group>"; };
 		CEEC78D02416F12A00757554 /* Group7_W2020_MAD3115_FP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Group7_W2020_MAD3115_FP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEC78D32416F12A00757554 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEEC78D52416F12A00757554 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,14 @@
 			path = Vehicle;
 			sourceTree = "<group>";
 		};
+		9BE8C63F2417037F00D0A237 /* Rent */ = {
+			isa = PBXGroup;
+			children = (
+				9BE8C640241703CA00D0A237 /* VehicleRent.swift */,
+			);
+			path = Rent;
+			sourceTree = "<group>";
+		};
 		CEEC78C72416F12A00757554 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +104,7 @@
 		CEEC78D22416F12A00757554 /* Group7_W2020_MAD3115_FP */ = {
 			isa = PBXGroup;
 			children = (
+				9BE8C63F2417037F00D0A237 /* Rent */,
 				9BE8C6122416F6A300D0A237 /* Vehicle */,
 				9BE8C6092416F50E00D0A237 /* Person */,
 				CEEC78E82416F1DE00757554 /* Images */,
@@ -199,6 +210,7 @@
 				CEEC78D82416F12A00757554 /* ViewController.swift in Sources */,
 				9BE8C60D2416F5D000D0A237 /* Customer.swift in Sources */,
 				9BE8C6112416F67A00D0A237 /* Owner.swift in Sources */,
+				9BE8C641241703CA00D0A237 /* VehicleRent.swift in Sources */,
 				CEEC78D42416F12A00757554 /* AppDelegate.swift in Sources */,
 				9BE8C6382416F75700D0A237 /* Car.swift in Sources */,
 				9BE8C60F2416F61000D0A237 /* Driver.swift in Sources */,
