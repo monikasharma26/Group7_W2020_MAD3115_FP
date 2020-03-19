@@ -45,3 +45,23 @@ init(vehicleIdentificationNumber: String, vehicleDescription: String, manufactur
        self.isWifiAvailable = isWifiAvailable
        self.isAccessibiltyServiceAvailable = isAccessibiltyServiceAvailable
      }
+
+init(varDeObj: VehicleM)
+          {
+            self.vehicleIdentificationNumber = varDeObj.vehicleIdentificationNumber
+            self.vehicleDescription = varDeObj.vehicleDescription
+            self.manufacturerName = varDeObj.manufacturerName
+            self.isSelfDrive = varDeObj.isSelfDrive
+            self.isInsured = varDeObj.isInsured
+            self.noOfSeat = varDeObj.noOfSeat
+            self.fuelType = varDeObj.fuelType
+            self.vehicleType = varDeObj.vehicleType!
+              self.isAccessibiltyServiceAvailable = false
+              self.isWifiAvailable = false
+            guard let vechi = varDeObj.vehicleRent else {
+                FinalOutput.shared.addNew(text: "")
+                return
+                  }
+            self.details = vechi
+            
+            }
