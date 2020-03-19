@@ -9,5 +9,8 @@
 import Foundation
 class Driver
 {
+    var drivingLicenseNumber : String?
+       var isDrivingHistoryCleared : Bool?
+       var salary : Float?
     
 }
