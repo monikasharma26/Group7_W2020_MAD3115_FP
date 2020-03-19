@@ -10,3 +10,23 @@ import Foundation
 
 class Bus : Vehicle
 {
+
+var vehicleIdentificationNumber: String
+ 
+ var vehicleDescription: String
+ 
+ var manufacturerName: String
+ 
+ var isSelfDrive: Bool
+ 
+ var isInsured: Bool
+ 
+ var noOfSeat: Int
+ 
+ var fuelType: String
+ 
+ var vehicleType: VehicleT
+ var details: VehicleRentM?
+var busType: String?
+ var isWifiAvailable: Bool
+ var isAccessibiltyServiceAvailable: Bool
