@@ -59,9 +59,10 @@ init(varDeObj: VehicleM)
               self.isAccessibiltyServiceAvailable = false
               self.isWifiAvailable = false
             guard let vechi = varDeObj.vehicleRent else {
-                FinalOutput.shared.addNew(text: "")
+               // FinalOutput.shared.addNew(text: "")
                 return
                   }
             self.details = vechi
             
             }
+}
