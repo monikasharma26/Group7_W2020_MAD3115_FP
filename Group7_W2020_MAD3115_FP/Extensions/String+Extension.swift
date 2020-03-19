@@ -15,5 +15,9 @@ extension String{
            let formattedDate : Date? = dateFormatterPrint.date(from: sDate)
            return formattedDate
        }
-    
+    func getDocumentsDirectory() -> URL {
+              let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+              return paths[0]
+          }
+  
 }
