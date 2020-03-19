@@ -82,7 +82,32 @@ guard let vechicle = vechileM else {
        //FinalOutput.shared.addNew(text: "Customer has no vehicle.\n")
        return
    }
-    
+    switch vechicle.vehicleType {
+       case .car:
+            do {
+                    car = Car(varDeObj: vechicle)
+                   // car?.display()
+                    
+            }
+            
+        case .motorcycle:
+            do {
+                motorCycle = MotorCycle(varDeObj: vechicle)
+               // motorCycle!.display()
+            }
+        case .bus:
+            do {
+                bus = Bus(varDeObj: vechicle)
+               // bus!.display()
+            }
+        case .none:
+            print("")
+        }
+
+        }
+
+        
+    }
 
 
 
@@ -92,4 +117,5 @@ guard let vechicle = vechileM else {
 
 
 
-//Variable added for initiate vehicle class function in person extension
+
+
