@@ -24,4 +24,14 @@ extension Date
            dateComponents.day = day
            return calendar.date(from: dateComponents) ?? nil
        }
+    public static func dateDifference(birthYear: Int) -> Int {
+    //Getting Date
+    let date = Date()
+    //getting year
+    let calender = Calendar.current
+    let currYear = calender.component(.year, from: date)
+    //returning result
+    return currYear - birthYear
+        
+      }
 }
