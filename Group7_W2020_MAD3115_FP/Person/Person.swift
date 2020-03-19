@@ -77,7 +77,19 @@ var car: Car?
 
  var motorCycle: MotorCycle?
 var bus : Bus?
+
+guard let vechicle = vechileM else {
+       //FinalOutput.shared.addNew(text: "Customer has no vehicle.\n")
+       return
+   }
     
 
 
 
+
+
+
+
+
+
+//Variable added for initiate vehicle class function in person extension
