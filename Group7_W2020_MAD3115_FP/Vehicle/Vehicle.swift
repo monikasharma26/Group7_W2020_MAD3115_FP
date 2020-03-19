@@ -10,6 +10,15 @@ import Foundation
 
 protocol Vehicle {
     
- 
+ var vehicleIdentificationNumber: String {get set}
+    var vehicleDescription: String {get set}
+    var manufacturerName: String    {get set}
+    var isSelfDrive: Bool            {get set}
+    var isInsured: Bool               {get set}
+    var noOfSeat: Int                   {get set}
+    var fuelType: String     {get set}
+    var vehicleType: VehicleT  {get set}
+
+}
     
 
