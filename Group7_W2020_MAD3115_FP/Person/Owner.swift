@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Owner
+class Owner: Person
 {
     
     var companyTitle : String = "LTE"
