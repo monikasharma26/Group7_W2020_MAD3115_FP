@@ -9,5 +9,10 @@
 import Foundation
 struct BaseCustomer: Codable {
     
+     var per : [PersonM]?
+        enum CodingKeys: String, CodingKey {
+        case per = "PersonM"
+    }
+    
    
 }
