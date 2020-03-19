@@ -16,4 +16,8 @@ extension Int {
     {
         return 50
     }
+    public func busBaseRate() -> String
+               {
+                   return "\(self)250"
+               }
 }
