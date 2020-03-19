@@ -50,4 +50,7 @@ extension String{
         }
         return flag
     }
+    func speed()-> String{
+                  return "\(self) km/hr"
+       }
 }
