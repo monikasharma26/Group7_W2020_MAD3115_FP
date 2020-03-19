@@ -73,6 +73,11 @@ extension Person
 
 func initiateVehileClass(vechileM: VehicleM?) {
     
+var car: Car?
+
+ var motorCycle: MotorCycle?
+var bus : Bus?
+    
 
 
 
