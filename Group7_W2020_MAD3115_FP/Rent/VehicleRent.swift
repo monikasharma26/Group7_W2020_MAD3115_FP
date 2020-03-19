@@ -76,3 +76,26 @@ func removeVehicleRent(vehicleRentID: Int){
                   self.rentedDays = numberOfDays
                   }
 
+public func TotalFare() -> Float
+      {
+          
+          switch vehicleTy
+          {
+          case .car:
+              self.totalFare = Float((100 * rentedDays) + (self.kmdrive * 5))
+              self.totalAmount = totalFare
+              return totalAmount
+              
+          case .motorcycle:
+              totalFare = Float((50 * rentedDays) + (self.kmdrive * 1))
+              totalAmount=totalFare
+              return totalAmount
+          case .bus:
+              totalFare = Float((250 * rentedDays) + (self.kmdrive * 7))
+              totalAmount=totalFare
+              return totalAmount
+          default:
+              totalFare = 0;
+              return totalFare
+          }
+      }
