@@ -7,3 +7,9 @@
 //
 
 import Foundation
+struct VehicleM : Codable {
+   
+}
+enum VehicleT: String, Codable {
+    case car = "Car", motorcycle = "Motorcycle" , bus = "Bus"
+}
