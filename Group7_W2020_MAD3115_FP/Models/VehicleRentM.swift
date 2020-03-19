@@ -10,6 +10,8 @@ import Foundation
 
 struct VehicleRentM: Codable {
     // MARK:- Properties
-  
+  var StartDate: String  = "N/A"
+    var EndDate: String = "N/A"
+    var Kmdrive : Int = 0
    
 }
