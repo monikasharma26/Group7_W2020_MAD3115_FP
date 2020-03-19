@@ -62,3 +62,17 @@ func addVehicleRent(vehicleRent: VehicleRent, vehicleRentID: Int){
     vehicleListRented.updateValue(vehicleRent, forKey: vehicleRentID)
 }
 
+func removeVehicleRent(vehicleRentID: Int){
+                  vehicleListRented.removeValue(forKey: vehicleRentID)
+              }
+  
+                 public func totalDays() {
+                  //let current = Calendar.current
+                  var start: Int = 0
+                  var end : Int = 0
+                  start = Int(self.rentStartDate)!
+                  end = Int(self.rentEndDate)!
+                  let numberOfDays = end - start
+                  self.rentedDays = numberOfDays
+                  }
+
