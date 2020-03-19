@@ -8,5 +8,8 @@
 
 import Foundation
 extension Int {
-
+    public func carBaseRate() -> Int
+               {
+               return 100
+               }
 }
