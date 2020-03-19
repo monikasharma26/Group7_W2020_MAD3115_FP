@@ -20,4 +20,8 @@ extension Int {
                {
                    return "\(self)250"
                }
+    public func carRatePerKm() -> String
+               {
+                   return "\(self)100"
+               }
 }
