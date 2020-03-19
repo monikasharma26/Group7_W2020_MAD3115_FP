@@ -47,5 +47,22 @@ init(id: String, firstName: String, lastName: String, gender: String, birthDate:
    self.gender = gender
    self.birthDate = birthDate
 
+ guard( mobileNumber.isvalidPhoneNumber() ) else {
+            throw CustomerError.mobileInvalid
+        }
+        self.mobileNumber = mobileNumber
+        if emailId.isValidEmail() {
+                          self.emailId = emailId
+                      }
+                       else
+                        { throw CustomerError.emailInvalid   }
+        
+        self.userName = userName
+        self.password = password
+        
+    }
+            
+}
+
 
 
