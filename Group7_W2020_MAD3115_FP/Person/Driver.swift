@@ -15,6 +15,17 @@ class Driver
     
     init(id: String, firstName: String, lastName: String, gender: String, birthDate: Int, age: Int, mobileNumber: String, emailId: String, userName: String, password: String, dLicenseNumber : String?, drivingHistoryCleared : Bool?, sal : Float?) throws
        {
-           
+           guard(emailId.isValidEmail()) else {
+                     throw CustomerError.emailInvalid
+                 }
+                 guard( mobileNumber.isvalidPhoneNumber() ) else {
+                         throw CustomerError.mobileInvalid
+                     }
+                  try super.init(id: id, firstName: firstName, lastName: lastName, gender: gender, birthDate: birthDate, mobileNumber: mobileNumber, emailId: emailId, userName: userName, password: password)
+                  
+                  self.drivingLicenseNumber = dLicenseNumber
+                  self.isDrivingHistoryCleared = drivingHistoryCleared
+                  self.salary = sal
+              }
     
 }
