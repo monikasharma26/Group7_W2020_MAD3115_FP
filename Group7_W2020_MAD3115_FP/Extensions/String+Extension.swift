@@ -19,5 +19,12 @@ extension String{
               let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
               return paths[0]
           }
-  
+  func addToFile() {
+        let filename = getDocumentsDirectory().appendingPathComponent("output.txt")
+        do {
+            try write(to: filename, atomically: true, encoding: String.Encoding.utf8)
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
 }
