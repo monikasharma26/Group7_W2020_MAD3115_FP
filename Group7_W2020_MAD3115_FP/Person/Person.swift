@@ -64,5 +64,13 @@ init(id: String, firstName: String, lastName: String, gender: String, birthDate:
             
 }
 
+extension Person
+{
+
+@objc func calculateTotal() -> Float {
+    return 0.0
+}
+    
+
 
 
