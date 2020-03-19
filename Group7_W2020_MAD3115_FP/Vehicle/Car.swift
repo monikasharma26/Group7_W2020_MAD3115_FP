@@ -34,4 +34,18 @@ class Car: Vehicle
      //  var ratePerKm : Int
        var details: VehicleRentM?
     
-}
+init(vehicleIdentificationNumber:String,vehicleDescription:String,manufacturerName: String,isSelfDrive:Bool,isInsured: Bool,noOfSeat:Int,seat: Int, fuelType: String,vehicleType:VehicleT, carColor: String)
+  {
+              self.vehicleIdentificationNumber = vehicleIdentificationNumber
+              self.vehicleDescription = vehicleDescription
+              self.manufacturerName = manufacturerName
+              self.isSelfDrive = isSelfDrive
+              self.isInsured = isInsured
+              self.noOfSeat = noOfSeat
+              self.fuelType = fuelType
+            self.vehicleType = vehicleType
+         //   self.baseRate = baseRate
+          //  self.ratePerKm = ratePerKm
+          self.carColor = carColor
+       //   self.carType = carType
+  }
