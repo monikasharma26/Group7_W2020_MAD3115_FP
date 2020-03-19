@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+struct VehicleRentM: Codable {
+    // MARK:- Properties
+  
+   
+}
