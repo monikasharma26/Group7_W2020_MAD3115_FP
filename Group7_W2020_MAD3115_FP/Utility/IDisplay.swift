@@ -11,3 +11,8 @@ import Foundation
 @objc protocol IDisplay {
 /// method to Display details
 func display()
+
+/// method to update calculate TotalBill
+ @objc optional func calculateTotal() -> Float
+
+}
