@@ -7,3 +7,7 @@
 //
 
 import Foundation
+enum CustomerError:Error
+{
+    
+}
