@@ -57,3 +57,21 @@ extension String{
                return "\(self) mpg"
     }
 }
+extension Float {
+        
+    func kiloMeter()-> String{
+               return "\(self) Km"
+    }
+        
+        func currency()-> String{
+                           return "$ \(self)"
+        }
+    
+        func seat()-> String{
+                   return "\(self) Seats"
+        }
+            
+           
+            
+    
+}
