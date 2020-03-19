@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Customer
+class Customer :Person
 {
     var address : String?
     var city : String?
