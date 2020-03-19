@@ -12,3 +12,4 @@ class DataSource {
 
  private init(){ }
 
+static func readJsonFileWith(name file: String) -> [PersonM] {
