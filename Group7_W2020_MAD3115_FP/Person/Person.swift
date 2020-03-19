@@ -13,6 +13,7 @@ enum Gender : String
 }
 
 import Foundation
+
 class Person
 {
     var id : String
@@ -45,7 +46,7 @@ class Person
         self.gender = gender
         self.birthDate = birthDate
     }
-    guard( mobileNumber.isvalidPhoneNumber() ) else {
+    guard let mobileNumber.isvalidPhoneNumber() ) else {
         throw CustomerError.mobileInvalid
     }
     self.mobileNumber = mobileNumber
@@ -60,7 +61,6 @@ class Person
         
     }
     
-    
-    
+
     
 
