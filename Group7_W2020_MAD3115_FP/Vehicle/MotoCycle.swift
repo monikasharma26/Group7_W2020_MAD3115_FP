@@ -64,7 +64,7 @@ class MotorCycle
                self.milage = 42
                
                guard let vechi = varDeObj.vehicleRent else {
-                   FinalOutput.shared.addNew(text: "")
+                  // FinalOutput.shared.addNew(text: "")
                    return
                }
                self.details = vechi
