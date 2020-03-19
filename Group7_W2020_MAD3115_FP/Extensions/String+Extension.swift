@@ -8,4 +8,12 @@
 
 import Foundation
 extension String{
+    public static func formattedDate(sDate : String) -> Date?
+       {
+           let dateFormatterPrint = DateFormatter()
+           dateFormatterPrint.dateFormat = "dd-MM-YYYY"
+           let formattedDate : Date? = dateFormatterPrint.date(from: sDate)
+           return formattedDate
+       }
+    
 }
