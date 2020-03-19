@@ -58,3 +58,7 @@ init(varDeObj :VehicleRentM?,vehicletype :VehicleT )
        
    }
 
+func addVehicleRent(vehicleRent: VehicleRent, vehicleRentID: Int){
+    vehicleListRented.updateValue(vehicleRent, forKey: vehicleRentID)
+}
+
