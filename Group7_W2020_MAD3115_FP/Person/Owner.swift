@@ -10,4 +10,9 @@ import Foundation
 class Owner
 {
     
+    var companyTitle : String = "LTE"
+
+    var webSite : String  = "www.lte.com"
+
+      var vehicle : VehicleM?
 }
