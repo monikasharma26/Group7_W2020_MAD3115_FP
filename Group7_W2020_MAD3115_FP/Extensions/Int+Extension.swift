@@ -24,4 +24,8 @@ extension Int {
                {
                    return "\(self)100"
                }
+    public func motorCycleRatePerKm() -> Int
+    {
+        return 50
+    }
 }
