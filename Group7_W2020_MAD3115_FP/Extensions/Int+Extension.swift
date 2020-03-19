@@ -12,4 +12,8 @@ extension Int {
                {
                return 100
                }
+    public func motorCycleBaseRate() -> Int
+    {
+        return 50
+    }
 }
