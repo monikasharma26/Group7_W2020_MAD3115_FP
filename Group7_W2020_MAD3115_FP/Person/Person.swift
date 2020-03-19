@@ -11,6 +11,10 @@ enum Gender : String
    case Female
    case Other
 }
+
+import Foundation
+class Person {
+
     
 
     
