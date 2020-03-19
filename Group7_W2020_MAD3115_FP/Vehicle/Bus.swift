@@ -30,3 +30,18 @@ var vehicleIdentificationNumber: String
 var busType: String?
  var isWifiAvailable: Bool
  var isAccessibiltyServiceAvailable: Bool
+
+init(vehicleIdentificationNumber: String, vehicleDescription: String, manufacturerName:String, isSelfDrive: Bool, isInsured: Bool, noOfSeat: Int, fuelType: String, vehicleType: VehicleT,
+        isWifiAvailable: Bool, isAccessibiltyServiceAvailable: Bool ){
+       
+         self.vehicleIdentificationNumber = vehicleIdentificationNumber
+         self.vehicleDescription = vehicleDescription
+         self.manufacturerName = manufacturerName
+         self.isSelfDrive = isSelfDrive
+         self.isInsured = isInsured
+         self.noOfSeat = noOfSeat
+         self.fuelType = fuelType
+       self.vehicleType = vehicleType
+       self.isWifiAvailable = isWifiAvailable
+       self.isAccessibiltyServiceAvailable = isAccessibiltyServiceAvailable
+     }
