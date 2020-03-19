@@ -16,5 +16,17 @@ enum vehicleType1{
 
 class VehicleRent
 {
-    
+     var vehicleRentID : Int?
+        var rentStartDate : String
+        var rentEndDate : String
+       var rentInNumberOfDays : Float = 0.0
+        var vehicles = [String: Vehicle]()
+        var vehicleTy : VehicleT?
+        var rentedDays : Int = 0
+        var kmdrive : Int = 0
+        var rentInKm : Float = 0.0
+        let sDate:String = "12/01/2020"
+    let eDate: String = "18/01/2020"
+        var vehicleListRented = [Int : VehicleRent]()
+        var amountToPayForAllRentedVehicles : Float = 0.0
 
