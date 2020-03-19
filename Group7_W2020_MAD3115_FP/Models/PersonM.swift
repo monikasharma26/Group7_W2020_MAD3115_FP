@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+struct PersonM : Codable {
+    // properties
+   
+}
+
+enum PersonType: String, Codable {
+    case Customer = "Customer" ,Owner = "Owner", Driver = "Driver"
+}
+
