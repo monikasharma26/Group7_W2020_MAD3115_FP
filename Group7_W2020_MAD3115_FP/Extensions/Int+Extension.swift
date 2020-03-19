@@ -28,4 +28,8 @@ extension Int {
     {
         return 50
     }
+    public func busRateKm() -> String
+               {
+                   return "\(self)250"
+               }
 }
