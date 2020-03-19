@@ -49,3 +49,25 @@ init(vehicleIdentificationNumber:String,vehicleDescription:String,manufacturerNa
           self.carColor = carColor
        //   self.carType = carType
   }
+
+init(varDeObj: VehicleM)
+      {
+       self.vehicleIdentificationNumber = varDeObj.vehicleIdentificationNumber
+       self.vehicleDescription = varDeObj.vehicleDescription
+       self.manufacturerName = varDeObj.manufacturerName
+       self.isSelfDrive = varDeObj.isSelfDrive
+       self.isInsured = varDeObj.isInsured
+       self.noOfSeat = varDeObj.noOfSeat
+       self.fuelType = varDeObj.fuelType
+       self.vehicleType = varDeObj.vehicleType!
+    //   self.baseRate = ""
+      // self.ratePerKm = varDeObj.vehicleRent!.ratePerKm
+       self.carColor = "Red"
+      // self.details = varDeObj.vehicleRent
+       guard let vechi = varDeObj.vehicleRent else {
+              FinalOutput.shared.addNew(text: "Customer has no vehicle Rented.")
+              return
+          }
+       self.details = vechi
+          
+      }
