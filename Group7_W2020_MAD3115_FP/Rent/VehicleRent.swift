@@ -114,3 +114,4 @@ public func calculateTotal() -> Float
    {
        return total + self.totalAmount
    }
+}
