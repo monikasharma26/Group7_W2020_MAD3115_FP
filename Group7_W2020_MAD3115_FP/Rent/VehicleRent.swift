@@ -37,3 +37,24 @@ public  var totalAmount: Float = 0.0
  public  var total: Float = 0.0
  var totalFare: Float = 0.0
 
+init(vehicleRentID : Int, rentStartDate : String, rentEndDate : String, kmdrive : Int,vehicleTy : VehicleT)
+{
+    self.vehicleRentID = vehicleRentID
+    self.rentStartDate = rentStartDate
+    self.rentEndDate = rentEndDate
+    self.kmdrive = kmdrive
+    self.vehicleTy = vehicleTy
+  
+}
+
+init(varDeObj :VehicleRentM?,vehicletype :VehicleT )
+   {
+   self.rentStartDate = (varDeObj?.StartDate)!
+   self.rentEndDate = (varDeObj?.EndDate)!
+   self.kmdrive = (varDeObj?.Kmdrive)!
+   self.vehicleTy = vehicletype
+   totalDays()
+   self.totalFare = TotalFare()
+       
+   }
+
