@@ -13,3 +13,7 @@ class DataSource {
  private init(){ }
 
 static func readJsonFileWith(name file: String) -> [PersonM] {
+
+let url = Bundle.main.url(forResource: file, withExtension: "json")
+guard let jsonData = url else{ return [] }
+guard let dataParse = try? Data(contentsOf: jsonData) else { return [] }
