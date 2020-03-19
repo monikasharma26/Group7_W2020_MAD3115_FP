@@ -70,6 +70,8 @@ extension Person
 @objc func calculateTotal() -> Float {
     return 0.0
 }
+
+func initiateVehileClass(vechileM: VehicleM?) {
     
 
 
