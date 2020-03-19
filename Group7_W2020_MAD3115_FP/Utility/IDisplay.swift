@@ -10,4 +10,4 @@ import Foundation
 
 @objc protocol IDisplay {
 /// method to Display details
-
+func display()
