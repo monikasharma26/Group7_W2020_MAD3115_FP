@@ -8,7 +8,6 @@
 
 import Foundation
 struct VehicleM : Codable {
-    
    let vehicleIdentificationNumber, vehicleDescription, manufacturerName: String
       let isSelfDrive, isInsured: Bool
       let noOfSeat: Int
