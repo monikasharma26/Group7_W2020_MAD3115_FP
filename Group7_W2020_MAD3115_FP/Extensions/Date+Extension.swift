@@ -7,6 +7,11 @@
 //
 
 import Foundation
+struct Errors {
+    static let InavalidEmail = "Invalid Email ID."
+    static let InvalidMobileNumber = "Invalid Mobile Number."
+    
+}
 extension Date
 {
     public func getForamttedDate() -> String
