@@ -109,3 +109,8 @@ func removeVehicle(identificationNumber: String)
       {
           vehicles.removeValue(forKey: identificationNumber)
       }
+
+public func calculateTotal() -> Float
+   {
+       return total + self.totalAmount
+   }
