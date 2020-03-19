@@ -104,3 +104,8 @@ func addVehicle(vehicle: Vehicle, identificationNumber: String)
       {
          vehicles.updateValue(vehicle, forKey: identificationNumber)
       }
+
+func removeVehicle(identificationNumber: String)
+      {
+          vehicles.removeValue(forKey: identificationNumber)
+      }
