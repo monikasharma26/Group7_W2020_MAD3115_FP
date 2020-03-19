@@ -9,5 +9,5 @@
 import Foundation
 enum CustomerError:Error
 {
-    
+    case emailInvalid, mobileInvalid
 }
