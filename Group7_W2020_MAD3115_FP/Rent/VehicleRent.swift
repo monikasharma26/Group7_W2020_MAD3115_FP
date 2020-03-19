@@ -99,3 +99,8 @@ public func TotalFare() -> Float
               return totalFare
           }
       }
+
+func addVehicle(vehicle: Vehicle, identificationNumber: String)
+      {
+         vehicles.updateValue(vehicle, forKey: identificationNumber)
+      }
