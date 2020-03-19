@@ -65,9 +65,10 @@ init(varDeObj: VehicleM)
        self.carColor = "Red"
       // self.details = varDeObj.vehicleRent
        guard let vechi = varDeObj.vehicleRent else {
-              FinalOutput.shared.addNew(text: "Customer has no vehicle Rented.")
+              //FinalOutput.shared.addNew(text: "Customer has no vehicle Rented.")
               return
           }
        self.details = vechi
           
       }
+}
