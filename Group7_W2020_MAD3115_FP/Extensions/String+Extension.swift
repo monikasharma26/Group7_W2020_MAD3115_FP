@@ -53,4 +53,7 @@ extension String{
     func speed()-> String{
                   return "\(self) km/hr"
        }
+    func milage()-> String{
+               return "\(self) mpg"
+    }
 }
