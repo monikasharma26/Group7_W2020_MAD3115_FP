@@ -9,5 +9,9 @@
 import Foundation
 class Customer
 {
-    
+    var address : String?
+    var city : String?
+    var vehicle: VehicleM?
+     var vehicleListRented = [Int : VehicleRent]()
+     var amountToPayForAllRentedVehicles : Float = 0.0
 }

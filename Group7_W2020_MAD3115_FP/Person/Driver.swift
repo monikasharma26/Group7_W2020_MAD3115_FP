@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Driver
+class Driver : Person
 {
     var drivingLicenseNumber : String?
        var isDrivingHistoryCleared : Bool?
