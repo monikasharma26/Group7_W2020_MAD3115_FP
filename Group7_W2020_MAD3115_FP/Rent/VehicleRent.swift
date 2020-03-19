@@ -7,6 +7,13 @@
 //
 
 import Foundation
+
+enum vehicleType1{
+    case Car
+    case MotorCycle
+    case Bus
+}
+
 class VehicleRent
 {
     
