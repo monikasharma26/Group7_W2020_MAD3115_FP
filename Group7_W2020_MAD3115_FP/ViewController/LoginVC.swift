@@ -80,7 +80,7 @@ class LoginVC: UIViewController {
             if boolChk {
                 //
                 
-                self.navigateScreen(storyboard: "Home", controller: "CustomerListVC")
+                self.navigateScreen(storyboard: "Home", controller: "HomeViewController")
             }else{
                 self.showAlert(title: "", message: msg)
             }
