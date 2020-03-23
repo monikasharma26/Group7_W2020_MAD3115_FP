@@ -15,7 +15,7 @@ enum Gender : String
 import Foundation
 class Person {
     
-    var id : String
+    var id : Int
     var firstName: String
     var lastName:  String
     var fullName: String {  get
@@ -39,7 +39,7 @@ class Person {
     var password : String
     var vehicleDictionary : Dictionary<Int, Vehicle>?
 
-init(id: String, firstName: String, lastName: String, gender: String, birthDate: Int, mobileNumber: String, emailId: String, userName: String, password: String) throws
+init(id: Int, firstName: String, lastName: String, gender: String, birthDate: Int, mobileNumber: String, emailId: String, userName: String, password: String) throws
 {
    self.id = id
    self.firstName = firstName
