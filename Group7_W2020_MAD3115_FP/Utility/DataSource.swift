@@ -7,23 +7,41 @@
 //
 
 import Foundation
-
+import Foundation
 class DataSource {
-
- private init(){ }
-
-static func readJsonFileWith(name file: String) -> [PersonM] {
-
-let url = Bundle.main.url(forResource: file, withExtension: "json")
-guard let jsonData = url else{ return [] }
-guard let dataParse = try? Data(contentsOf: jsonData) else { return [] }
-
-  do {
+    // MARK:- Life Cycle
+      //
+      
+      // MARK:- Functions
+      /** parsing method 1
+       */
+     /* static func readJsonWith(name file: String) -> [PersonM] {
+          let url = Bundle.main.url(forResource: file, withExtension: "json")
+          guard let jsonData = url else{ return [] }
+          guard let data = try? Data(contentsOf: jsonData) else { return [] }
+          do {
+              let decoder = JSONDecoder()
+              let baseModel = try decoder.decode(BaseCustomerM.self, from: data)
+            guard let customers = baseModel.per else { return [] }
+              return customers
+          } catch let err {
+              debugPrint(err)
+              return []
+          }
+      }
+  */
+    
+    static func readJsonFileWith(name file: String) -> [PersonM] {
+        let url = Bundle.main.url(forResource: file, withExtension: "json")
+        guard let jsonData = url else{ return [] }
+        guard let dataParse = try? Data(contentsOf: jsonData) else { return [] }
+        
+        do {
             // check if json data can be converted to foundation object.
             let json = try JSONSerialization.jsonObject(with: dataParse, options: .allowFragments)
             var dataDict = NSDictionary()
             dataDict = json as! NSDictionary
-            let jsonSer = try! JSONSerialization.data(withJSONObject: dataDict["PersonData"] as! NSArray)
+            let jsonSer = try! JSONSerialization.data(withJSONObject: dataDict["Customer"] as! NSArray)
             
             let decoder = JSONDecoder()
             decoder.dateDecodingStrategy = .secondsSince1970
@@ -36,4 +54,5 @@ guard let dataParse = try? Data(contentsOf: jsonData) else { return [] }
             return []
         }
     }
+    
 }
