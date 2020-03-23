@@ -7,24 +7,44 @@
 //
 
 import UIKit
-
 class CustomerListVC: UIViewController {
 
+    // MARK:- Properties
+    @IBOutlet var top_view: UIView!
+    @IBOutlet var custmList_tv: UITableView!
+    
+    // MARK:- Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        initSetup()
+        // register to receive notification...
+        NotificationCenter.default.addObserver(self, selector: #selector(CustomerListVC.refresh), name:  Notification.Name("customerListRefresh"), object: nil)
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
-    */
+    
+    
+    @IBAction func addBtnClicked(_ sender: Any) {
+        //
+        let storyboard = UIStoryboard(name: "Home", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "AddCustomerVC")
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    // MARK: - Helper
+    func initSetup(){
+        Singelton.intance.populateCustomer()
+        
+    }
 
+    @objc func refresh() {
+        //
+        custmList_tv.reloadData()
+    }
+    
 }
+
+
