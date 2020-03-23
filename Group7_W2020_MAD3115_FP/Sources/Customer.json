@@ -1,6 +1,6 @@
 {
 "Customer": [{
-    "id":         "101",
+    "id":         1,
     "firstName": "Monika",
     "lastName" : "Sharma",
     "gender"   : "Female",
@@ -12,10 +12,10 @@
     "address"     : "Toronto",
     "city"        : "Toronto",
     "type"        : "Customer",
-    "vehicle": null
+    "vehicle": []
 },
 {
-      "id": "2",
+      "id": 2,
       "firstName": "Kritima",
       "lastName" : "Kukkreja",
       "gender"   : "Female" ,
@@ -29,7 +29,7 @@
       "companyTitle" : "LTE",
       "webSite"       : "WWW.Lte.com",
       "type"        : "Customer",
-      "vehicle": {
+      "vehicle": [{
          "vehicleIdentificationNumber": "G1WL52M1W1104808",
           "vehicleDescription" : "Car",
           "manufacturerName" : "Honda",
@@ -45,10 +45,10 @@
               "EndDate"   : "18",
                "Kmdrive"  : 14
           }
-      }
+      }]
   },
 {
-    "id": "3",
+    "id": 3,
     "firstName": "Ikroop",
     "lastName" : "Kaur",
     "gender"   : "Female" ,
@@ -59,46 +59,26 @@
     "password"    : "roop123",
     "address"     : "Toronto",
     "city"        : "Toronto",
-    "type"        : "Owner",
-    "vehicle": {
-       "vehicleIdentificationNumber": "G1WL52M1W110334",
-        "vehicleDescription" : "MotoroCycle",
-        "manufacturerName" : "Pulser",
-        "isSelfDrive" : true,
-        "isInsured" : false,
-        "noOfSeat"  : 2,
-        "fuelType"  : "Electric",
-       "TopSpeed"  : 34 ,
-       "mileage"   : 15 ,
-        "vehicleType" : "Motorcycle" ,
-        "vehicleRent": null
-            }
-},
-{
-    "id": "4",
-       "firstName": "Aman",
-       "lastName" : "Kaur",
-       "gender"   : "Female" ,
-       "birthDate" : 1997,
-       "mobileNumber" : "8557010123" ,
-       "emailID"    : "aman@gmail.com" ,
-       "userName"   : "aman",
-       "password"    : "aman123",
-       "address"     : "Toronto",
-       "city"        : "Toronto",
-       "type"        : "Owner",
-       "vehicle": {
-          "vehicleIdentificationNumber": "G1WL52M1W11123",
-           "vehicleDescription" : "Bus",
-           "manufacturerName" : "MiniBus",
+    "type"        : "Customer",
+    "vehicle": [{
+       "vehicleIdentificationNumber": "G1WL52M1W1104808",
+           "vehicleDescription" : "Car",
+           "manufacturerName" : "Honda",
            "isSelfDrive" : true,
            "isInsured" : false,
-           "noOfSeat"  : 23,
-           "fuelType"  : "Diesel",
-           "vehicleType" : "Bus" ,
-               "vehicleRent": null
-                }
-}
+           "noOfSeat"  : 5,
+           "fuelType"  : "Petrol",
+           "carType"  : "Sedan",
+           "carColor"   : "Red",
+           "vehicleType" : "Car",
+           "vehicleRent": {
+               "StartDate" : "12",
+               "EndDate"   : "18",
+                "Kmdrive"  : 14
+           }
+       }]
+},
+
 ]
 }
 
