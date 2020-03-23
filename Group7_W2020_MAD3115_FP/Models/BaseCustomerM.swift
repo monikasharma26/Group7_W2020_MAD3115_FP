@@ -7,7 +7,7 @@
 //
 
 import Foundation
-struct BaseCustomer: Codable {
+struct BaseCustomerM: Codable {
     
      var per : [PersonM]?
         enum CodingKeys: String, CodingKey {

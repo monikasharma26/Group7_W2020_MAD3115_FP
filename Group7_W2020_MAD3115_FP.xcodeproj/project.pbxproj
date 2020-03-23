@@ -33,6 +33,9 @@
 		CE35BCB824282F8E005A5BAF /* Customer.json in Resources */ = {isa = PBXBuildFile; fileRef = CE35BCB724282F8E005A5BAF /* Customer.json */; };
 		CE35BCBA242831C4005A5BAF /* CustomerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35BCB9242831C4005A5BAF /* CustomerListVC.swift */; };
 		CE35BCBC2428372E005A5BAF /* Singelton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35BCBB2428372E005A5BAF /* Singelton.swift */; };
+		CE35BCBE24283C1C005A5BAF /* CustomersVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35BCBD24283C1C005A5BAF /* CustomersVM.swift */; };
+		CE35BCC024284022005A5BAF /* CustomerListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35BCBF24284022005A5BAF /* CustomerListTVC.swift */; };
+		CE35BCC22428444D005A5BAF /* AddCustomerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35BCC12428444D005A5BAF /* AddCustomerVC.swift */; };
 		CEC02338242572760059023A /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC02337242572760059023A /* UIViewController.swift */; };
 		CEC0233A242572AB0059023A /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC02339242572AB0059023A /* UIView.swift */; };
 		CEC0233C242572D90059023A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0233B242572D90059023A /* UIColor.swift */; };
@@ -72,6 +75,9 @@
 		CE35BCB724282F8E005A5BAF /* Customer.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Customer.json; sourceTree = "<group>"; };
 		CE35BCB9242831C4005A5BAF /* CustomerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListVC.swift; sourceTree = "<group>"; };
 		CE35BCBB2428372E005A5BAF /* Singelton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singelton.swift; sourceTree = "<group>"; };
+		CE35BCBD24283C1C005A5BAF /* CustomersVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomersVM.swift; sourceTree = "<group>"; };
+		CE35BCBF24284022005A5BAF /* CustomerListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListTVC.swift; sourceTree = "<group>"; };
+		CE35BCC12428444D005A5BAF /* AddCustomerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomerVC.swift; sourceTree = "<group>"; };
 		CEC02337242572760059023A /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		CEC02339242572AB0059023A /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		CEC0233B242572D90059023A /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
@@ -225,6 +231,9 @@
 				CE35734A242583B400025729 /* Home.storyboard */,
 				CE35734C2425845B00025729 /* HomeViewController.swift */,
 				CE35BCB9242831C4005A5BAF /* CustomerListVC.swift */,
+				CE35BCBD24283C1C005A5BAF /* CustomersVM.swift */,
+				CE35BCBF24284022005A5BAF /* CustomerListTVC.swift */,
+				CE35BCC12428444D005A5BAF /* AddCustomerVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -317,15 +326,18 @@
 				9BE8C6592417079A00D0A237 /* Int+Extension.swift in Sources */,
 				9BE8C646241704B700D0A237 /* DataSource.swift in Sources */,
 				9BE8C6362416F71200D0A237 /* Vehicle.swift in Sources */,
+				CE35BCBE24283C1C005A5BAF /* CustomersVM.swift in Sources */,
 				9BE8C6572417076700D0A237 /* Date+Extension.swift in Sources */,
 				9BE8C63A2416F89F00D0A237 /* MotoCycle.swift in Sources */,
 				9BE8C6492417060300D0A237 /* BaseCustomerM.swift in Sources */,
 				CEC0233C242572D90059023A /* UIColor.swift in Sources */,
+				CE35BCC024284022005A5BAF /* CustomerListTVC.swift in Sources */,
 				CEEC78D82416F12A00757554 /* LoginVC.swift in Sources */,
 				CE35BCBA242831C4005A5BAF /* CustomerListVC.swift in Sources */,
 				9BE8C60D2416F5D000D0A237 /* Customer.swift in Sources */,
 				9BE8C6112416F67A00D0A237 /* Owner.swift in Sources */,
 				9BE8C65B2417080900D0A237 /* String+Extension.swift in Sources */,
+				CE35BCC22428444D005A5BAF /* AddCustomerVC.swift in Sources */,
 				9BE8C641241703CA00D0A237 /* VehicleRent.swift in Sources */,
 				CEC02338242572760059023A /* UIViewController.swift in Sources */,
 				CEEC78D42416F12A00757554 /* AppDelegate.swift in Sources */,
