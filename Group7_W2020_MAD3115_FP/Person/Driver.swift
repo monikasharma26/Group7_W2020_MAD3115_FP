@@ -13,7 +13,7 @@ class Driver : Person
        var isDrivingHistoryCleared : Bool?
        var salary : Float?
     
-    init(id: String, firstName: String, lastName: String, gender: String, birthDate: Int, age: Int, mobileNumber: String, emailId: String, userName: String, password: String, dLicenseNumber : String?, drivingHistoryCleared : Bool?, sal : Float?) throws
+    init(id: Int, firstName: String, lastName: String, gender: String, birthDate: Int, age: Int, mobileNumber: String, emailId: String, userName: String, password: String, dLicenseNumber : String?, drivingHistoryCleared : Bool?, sal : Float?) throws
        {
            guard(emailId.isValidEmail()) else {
                      throw CustomerError.emailInvalid
