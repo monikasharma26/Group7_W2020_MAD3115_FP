@@ -15,7 +15,7 @@ class Customer :Person
      var vehicleListRented = [Int : VehicleRent]()
      var amountToPayForAllRentedVehicles : Float = 0.0
     
-     init(id: String, firstName: String, lastName: String, gender: String, birthDate: Int, mobileNumber: String, emailId: String, userName: String, password: String, address : String?, city: String?, vehicle : VehicleM?) throws {
+     init(id: Int, firstName: String, lastName: String, gender: String, birthDate: Int, mobileNumber: String, emailId: String, userName: String, password: String, address : String?, city: String?, vehicle : VehicleM?) throws {
         
         guard (emailId.isValidEmail()) else {
                   throw CustomerError.emailInvalid
