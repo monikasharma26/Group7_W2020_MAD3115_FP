@@ -12,7 +12,23 @@
     "address"     : "Toronto",
     "city"        : "Toronto",
     "type"        : "Customer",
-    "vehicle": []
+    "vehicle": [{
+       "vehicleIdentificationNumber": "G1WL52M1W1104808",
+        "vehicleDescription" : "Car",
+        "manufacturerName" : "Honda",
+        "isSelfDrive" : true,
+        "isInsured" : false,
+        "noOfSeat"  : 5,
+        "fuelType"  : "Petrol",
+        "carType"  : "Sedan",
+        "carColor"   : "Red",
+        "vehicleType" : "Car",
+        "vehicleRent": {
+            "StartDate" : "12",
+            "EndDate"   : "18",
+             "Kmdrive"  : 14
+        }
+    }]
 },
 {
       "id": 2,
@@ -31,14 +47,14 @@
       "type"        : "Customer",
       "vehicle": [{
          "vehicleIdentificationNumber": "G1WL52M1W1104808",
-          "vehicleDescription" : "Car",
+          "vehicleDescription" : "MotorCycle",
           "manufacturerName" : "Honda",
           "isSelfDrive" : true,
           "isInsured" : false,
-          "noOfSeat"  : 5,
+          "noOfSeat"  : 2,
           "fuelType"  : "Petrol",
           "carType"  : "Sedan",
-          "carColor"   : "Red",
+          "carColor"   : "Yellow",
           "vehicleType" : "Car",
           "vehicleRent": {
               "StartDate" : "12",
@@ -62,15 +78,15 @@
     "type"        : "Customer",
     "vehicle": [{
        "vehicleIdentificationNumber": "G1WL52M1W1104808",
-           "vehicleDescription" : "Car",
-           "manufacturerName" : "Honda",
+           "vehicleDescription" : "Bus",
+           "manufacturerName" : "TATA",
            "isSelfDrive" : true,
            "isInsured" : false,
-           "noOfSeat"  : 5,
-           "fuelType"  : "Petrol",
-           "carType"  : "Sedan",
-           "carColor"   : "Red",
-           "vehicleType" : "Car",
+           "noOfSeat"  : 25,
+           "fuelType"  : "Diesel",
+           "carType"  : "TATA",
+           "carColor"   : "Yellow",
+           "vehicleType" : "Bus",
            "vehicleRent": {
                "StartDate" : "12",
                "EndDate"   : "18",
