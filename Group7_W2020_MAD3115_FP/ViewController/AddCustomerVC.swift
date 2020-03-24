@@ -43,7 +43,7 @@ class AddCustomerVC: UIViewController {
             if boolChk {
                 //
             
-                let newCustomer = PersonM(id: (newId + 1), firstName: fName_tf.text, lastName: lName_tf.text, email: email_tf.text, type: PersonType.Customer)
+                let newCustomer = PersonM(id: (newId + 1), firstName: fName_tf.text, lastName: lName_tf.text, emailID: email_tf.text, type: PersonType.Customer)
                     
                 
                 Singelton.intance.customerArr.append(CustomersVM(person: newCustomer))
