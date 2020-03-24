@@ -15,7 +15,7 @@ class DataSource {
       // MARK:- Functions
       /** parsing method 1
        */
-     /* static func readJsonWith(name file: String) -> [PersonM] {
+      static func readJsonWith(name file: String) -> [PersonM] {
           let url = Bundle.main.url(forResource: file, withExtension: "json")
           guard let jsonData = url else{ return [] }
           guard let data = try? Data(contentsOf: jsonData) else { return [] }
@@ -29,7 +29,7 @@ class DataSource {
               return []
           }
       }
-  */
+  
     
     static func readJsonFileWith(name file: String) -> [PersonM] {
         let url = Bundle.main.url(forResource: file, withExtension: "json")
