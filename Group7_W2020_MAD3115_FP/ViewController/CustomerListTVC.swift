@@ -33,7 +33,9 @@ class CustomerListTVC: UITableViewCell {
         //
         name_lbl.text = customer.fullName
         email_lbl.text = customer.email ?? ""
+        print(customer.email)
     }
+    
     
 
 }

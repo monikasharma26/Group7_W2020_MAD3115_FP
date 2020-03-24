@@ -1,0 +1,90 @@
+{
+"Owners": [{
+    "id":         11,
+    "firstName": "Monika",
+    "lastName" : "Sharma",
+    "gender"   : "Female",
+    "birthDate" : 1998,
+    "mobileNumber" : "8557010123",
+    "emailID"    : "monika@gmail.com",
+    "userName"   : "monika12",
+    "password"    : "monika",
+    "address"     : "Toronto",
+    "city"        : "Toronto",
+    "type"        : "Customer",
+    "vehicle": [{
+       "vehicleIdentificationNumber": "G1WL52M1W1104808",
+        "vehicleDescription" : "Car",
+        "manufacturerName" : "Honda",
+        "isSelfDrive" : true,
+        "isInsured" : false,
+        "noOfSeat"  : 5,
+        "fuelType"  : "Petrol",
+        "carType"  : "Sedan",
+        "carColor"   : "Red",
+        "vehicleType" : "Car"
+        
+    }]
+},
+{
+      "id": 2,
+      "firstName": "Kritima",
+      "lastName" : "Kukkreja",
+      "gender"   : "Female" ,
+      "birthDate" : 1999,
+      "mobileNumber" : "8557010123" ,
+      "emailID"    : "kritima@gmail.com" ,
+      "userName"   : "kritima",
+      "password"    : "kri123",
+      "address"     : "Toronto",
+      "city"        : "Toronto",
+      "companyTitle" : "LTE",
+      "webSite"       : "WWW.Lte.com",
+      "type"        : "Customer",
+      "vehicle": [{
+         "vehicleIdentificationNumber": "G1WL52M1W1104808",
+          "vehicleDescription" : "MotorCycle",
+          "manufacturerName" : "Honda",
+          "isSelfDrive" : true,
+          "isInsured" : false,
+          "noOfSeat"  : 2,
+          "fuelType"  : "Petrol",
+          "carType"  : "Sedan",
+          "carColor"   : "Yellow",
+          "vehicleType" : "MotorCycle"
+          
+      }]
+  },
+{
+    "id": 3,
+    "firstName": "Ikroop",
+    "lastName" : "Kaur",
+    "gender"   : "Female" ,
+    "birthDate" : 1993,
+    "mobileNumber" : "8557010123" ,
+    "emailID"    : "roop@gmail.com" ,
+    "userName"   : "roop",
+    "password"    : "roop123",
+    "address"     : "Toronto",
+    "city"        : "Toronto",
+    "type"        : "Customer",
+    "vehicle": [{
+       "vehicleIdentificationNumber": "G1WL52M1W1104808",
+           "vehicleDescription" : "Bus",
+           "manufacturerName" : "TATA",
+           "isSelfDrive" : true,
+           "isInsured" : false,
+           "noOfSeat"  : 25,
+           "fuelType"  : "Diesel",
+           "carType"  : "TATA",
+           "carColor"   : "Yellow",
+           "vehicleType" : "Bus"
+           
+       }]
+},
+
+]
+}
+
+
+
