@@ -17,7 +17,7 @@ class CustomersVM: NSObject {
     var lastName: String?
     var email: String?
     var personeType : PersonType?
-     var veicles: [VehicleM]?
+     var vehicles: [VehicleM]?
     var fullName: String {
         get {
               return (firstName ?? "") + " " + (lastName ?? "")
@@ -29,8 +29,8 @@ class CustomersVM: NSObject {
         self.id = person.id
         self.firstName = person.firstName
         self.lastName = person.lastName
-        self.email = person.email
-        self.veicles = person.vehicle
+        self.email = person.emailID
+        self.vehicles = person.vehicle
         self.personeType = person.type
     }
     
@@ -59,14 +59,16 @@ extension CustomerListVC: UITableViewDataSource, UITableViewDelegate {
        }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-     /*   tableView.deselectRow(at: indexPath, animated: true)
-        let storyboard = UIStoryboard(name: "Detail", bundle: nil)
+     tableView.deselectRow(at: indexPath, animated: true)
+        let storyboard = UIStoryboard(name: "Home", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "CustomerDetailVC") as! CustomerDetailVC
-        
         vc.custDetailArrInd = indexPath.row
-        
-        self.navigationController?.pushViewController(vc, animated: true)*/
+        self.navigationController?.pushViewController(vc, animated: true)
         
     }
+    
+    
+
+   
     
 }

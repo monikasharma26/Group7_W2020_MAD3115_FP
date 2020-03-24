@@ -5,7 +5,10 @@
 //  Created by S@i on 2020-03-20.
 //  Copyright © 2020 S@i. All rights reserved.
 //
-
+enum OptionSelected
+{
+    
+}
 import UIKit
 
 class HomeViewController: UIViewController {
@@ -15,12 +18,13 @@ class HomeViewController: UIViewController {
     @IBOutlet var view_add_vehicle: UIView!
     @IBOutlet var view_aboutus: UIView!
     @IBOutlet var view_contactus: UIView!
+    public  let viewgesture = UITapGestureRecognizer()
     var array: [String]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        let viewgesture = UITapGestureRecognizer()
+        
         viewgesture.numberOfTapsRequired = 1
         viewgesture.addTarget(self, action: #selector(viewbill))
 
@@ -101,7 +105,7 @@ class HomeViewController: UIViewController {
        */}
     
     @objc func contactbrowser() {
-           print("Tap gesture.....")
+         
         /*   let obj = self.storyboard?.instantiateViewController(withIdentifier: "WebviewViewController") as! WebviewViewController
            obj.optionSelect = "contact"
                   self.navigationController?.pushViewController(obj, animated: true)*/
@@ -116,9 +120,9 @@ class HomeViewController: UIViewController {
 
     
     @objc func deletecoustmer() {
-        print("Tap gesture.....")
+        
+        
       let obj = self.storyboard?.instantiateViewController(withIdentifier: "CustomerListVC") as! CustomerListVC
-     //   obj.optionSelect = "delete"
                self.navigationController?.pushViewController(obj, animated: true)
     }
     
