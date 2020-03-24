@@ -13,7 +13,7 @@ struct PersonM : Codable {
         var id: Int?
         var firstName: String?
         var lastName: String?
-        var email, gender, mobileNumber, userName, password, address, city: String?
+        var emailID, gender, mobileNumber, userName, password, address, city: String?
         var birthDate: Int?
         var type:  PersonType?
       //addedc for each cutomer bills

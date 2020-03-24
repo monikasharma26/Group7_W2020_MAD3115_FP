@@ -40,11 +40,14 @@
 		CEC0233A242572AB0059023A /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC02339242572AB0059023A /* UIView.swift */; };
 		CEC0233C242572D90059023A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0233B242572D90059023A /* UIColor.swift */; };
 		CEC0233F24257A360059023A /* Users.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEC0233E24257A360059023A /* Users.plist */; };
+		CECDBF52242878E300FA384F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CECDBF51242878E300FA384F /* Assets.xcassets */; };
+		CECDBF54242879E100FA384F /* CustomerDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECDBF53242879E100FA384F /* CustomerDetailVC.swift */; };
+		CECDBF5624287AD900FA384F /* CustomerDetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECDBF5524287AD900FA384F /* CustomerDetailTVC.swift */; };
+		CED68FD1242AA7690011F736 /* Owners.json in Resources */ = {isa = PBXBuildFile; fileRef = CED68FD0242AA7690011F736 /* Owners.json */; };
 		CEEC78D42416F12A00757554 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC78D32416F12A00757554 /* AppDelegate.swift */; };
 		CEEC78D62416F12A00757554 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC78D52416F12A00757554 /* SceneDelegate.swift */; };
 		CEEC78D82416F12A00757554 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC78D72416F12A00757554 /* LoginVC.swift */; };
 		CEEC78DB2416F12A00757554 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEC78D92416F12A00757554 /* Welcome.storyboard */; };
-		CEEC78DD2416F12D00757554 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEC78DC2416F12D00757554 /* Assets.xcassets */; };
 		CEEC78E02416F12D00757554 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEC78DE2416F12D00757554 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -82,12 +85,15 @@
 		CEC02339242572AB0059023A /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		CEC0233B242572D90059023A /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		CEC0233E24257A360059023A /* Users.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Users.plist; sourceTree = "<group>"; };
+		CECDBF51242878E300FA384F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CECDBF53242879E100FA384F /* CustomerDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDetailVC.swift; sourceTree = "<group>"; };
+		CECDBF5524287AD900FA384F /* CustomerDetailTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDetailTVC.swift; sourceTree = "<group>"; };
+		CED68FD0242AA7690011F736 /* Owners.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Owners.json; sourceTree = "<group>"; };
 		CEEC78D02416F12A00757554 /* Group7_W2020_MAD3115_FP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Group7_W2020_MAD3115_FP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEC78D32416F12A00757554 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEEC78D52416F12A00757554 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CEEC78D72416F12A00757554 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		CEEC78DA2416F12A00757554 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Welcome.storyboard; sourceTree = "<group>"; };
-		CEEC78DC2416F12D00757554 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEEC78DF2416F12D00757554 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEEC78E12416F12D00757554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -181,6 +187,7 @@
 			children = (
 				CEC0233E24257A360059023A /* Users.plist */,
 				CE35BCB724282F8E005A5BAF /* Customer.json */,
+				CED68FD0242AA7690011F736 /* Owners.json */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -234,6 +241,8 @@
 				CE35BCBD24283C1C005A5BAF /* CustomersVM.swift */,
 				CE35BCBF24284022005A5BAF /* CustomerListTVC.swift */,
 				CE35BCC12428444D005A5BAF /* AddCustomerVC.swift */,
+				CECDBF53242879E100FA384F /* CustomerDetailVC.swift */,
+				CECDBF5524287AD900FA384F /* CustomerDetailTVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -241,7 +250,7 @@
 		CEEC78E82416F1DE00757554 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				CEEC78DC2416F12D00757554 /* Assets.xcassets */,
+				CECDBF51242878E300FA384F /* Assets.xcassets */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -306,9 +315,10 @@
 			files = (
 				CEEC78E02416F12D00757554 /* LaunchScreen.storyboard in Resources */,
 				CE35BCB824282F8E005A5BAF /* Customer.json in Resources */,
+				CED68FD1242AA7690011F736 /* Owners.json in Resources */,
 				CE35734B242583B400025729 /* Home.storyboard in Resources */,
-				CEEC78DD2416F12D00757554 /* Assets.xcassets in Resources */,
 				CEEC78DB2416F12A00757554 /* Welcome.storyboard in Resources */,
+				CECDBF52242878E300FA384F /* Assets.xcassets in Resources */,
 				CEC0233F24257A360059023A /* Users.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +348,7 @@
 				9BE8C6112416F67A00D0A237 /* Owner.swift in Sources */,
 				9BE8C65B2417080900D0A237 /* String+Extension.swift in Sources */,
 				CE35BCC22428444D005A5BAF /* AddCustomerVC.swift in Sources */,
+				CECDBF5624287AD900FA384F /* CustomerDetailTVC.swift in Sources */,
 				9BE8C641241703CA00D0A237 /* VehicleRent.swift in Sources */,
 				CEC02338242572760059023A /* UIViewController.swift in Sources */,
 				CEEC78D42416F12A00757554 /* AppDelegate.swift in Sources */,
@@ -351,6 +362,7 @@
 				CE35BCBC2428372E005A5BAF /* Singelton.swift in Sources */,
 				CA15591D2423E94B0049C171 /* Bus.swift in Sources */,
 				9BE8C63E2417034500D0A237 /* VehicleType.swift in Sources */,
+				CECDBF54242879E100FA384F /* CustomerDetailVC.swift in Sources */,
 				CE357349242582FD00025729 /* SignUp.swift in Sources */,
 				CEEC78D62416F12A00757554 /* SceneDelegate.swift in Sources */,
 			);
