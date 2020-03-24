@@ -13,5 +13,6 @@ struct VehicleRentM: Codable {
   var StartDate: String  = "N/A"
     var EndDate: String = "N/A"
     var Kmdrive : Int = 0
+    
    
 }
