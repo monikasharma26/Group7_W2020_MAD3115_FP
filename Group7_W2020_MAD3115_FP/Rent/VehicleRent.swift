@@ -29,10 +29,10 @@ class VehicleRent
     let eDate: String = "18/01/2020"
         var vehicleListRented = [Int : VehicleRent]()
         var amountToPayForAllRentedVehicles : Float = 0.0
-public var totalBillToPay : Float
- {
+        public var totalBillToPay : Float
+        {
          return TotalFare()
- }
+        }
 public  var totalAmount: Float = 0.0
  public  var total: Float = 0.0
  var totalFare: Float = 0.0
