@@ -5,10 +5,7 @@
 //  Created by S@i on 2020-03-20.
 //  Copyright © 2020 S@i. All rights reserved.
 //
-enum OptionSelected
-{
-    
-}
+
 import UIKit
 
 class HomeViewController: UIViewController {
@@ -18,13 +15,13 @@ class HomeViewController: UIViewController {
     @IBOutlet var view_add_vehicle: UIView!
     @IBOutlet var view_aboutus: UIView!
     @IBOutlet var view_contactus: UIView!
-    public  let viewgesture = UITapGestureRecognizer()
+   
     var array: [String]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        
+         let viewgesture = UITapGestureRecognizer()
         viewgesture.numberOfTapsRequired = 1
         viewgesture.addTarget(self, action: #selector(viewbill))
 
@@ -57,52 +54,14 @@ class HomeViewController: UIViewController {
          view_aboutus.addGestureRecognizer(contactgesture)
          view_contactus.addGestureRecognizer(aboutgesture)
 
-         view_coustmers.layer.cornerRadius = 10.0
-         view_coustmers.layer.shadowColor = UIColor.gray.cgColor
-         view_coustmers.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
-         view_coustmers.layer.shadowRadius = 12.0
-         view_coustmers.layer.shadowOpacity = 0.7
-        
-         view_deletecoustmer.layer.cornerRadius = 10.0
-         view_deletecoustmer.layer.shadowColor = UIColor.gray.cgColor
-         view_deletecoustmer.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
-         view_deletecoustmer.layer.shadowRadius = 12.0
-         view_deletecoustmer.layer.shadowOpacity = 0.7
-        
-             view_add_vehicle.layer.cornerRadius = 10.0
-             view_add_vehicle.layer.shadowColor = UIColor.gray.cgColor
-             view_add_vehicle.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
-             view_add_vehicle.layer.shadowRadius = 12.0
-             view_add_vehicle.layer.shadowOpacity = 0.7
-        
-             view_aboutus.layer.cornerRadius = 10.0
-             view_aboutus.layer.shadowColor = UIColor.gray.cgColor
-             view_aboutus.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
-             view_aboutus.layer.shadowRadius = 12.0
-             view_aboutus.layer.shadowOpacity = 0.7
-
-               view_contactus.layer.cornerRadius = 10.0
-               view_contactus.layer.shadowColor = UIColor.gray.cgColor
-               view_contactus.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
-               view_contactus.layer.shadowRadius = 12.0
-               view_contactus.layer.shadowOpacity = 0.7
-        
-        
-         view_addbills.layer.cornerRadius = 10.0
-         view_addbills.layer.shadowColor = UIColor.gray.cgColor
-         view_addbills.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
-         view_addbills.layer.shadowRadius = 12.0
-         view_addbills.layer.shadowOpacity = 0.7
+    
     }
     
     @objc func addvehicle() {
-      /*     print("Tap gesture.....")
-           let obj = self.storyboard?.instantiateViewController(withIdentifier: "CoustmerlistViewController") as! CoustmerlistViewController
-        
-        obj.optionSelect = "addvehicle"
-           
-                  self.navigationController?.pushViewController(obj, animated: true)
-       */}
+     let obj = self.storyboard?.instantiateViewController(withIdentifier: "CustomerListVC") as! CustomerListVC
+     obj.option = OptionSelected.Driver
+            self.navigationController?.pushViewController(obj, animated: true)
+       }
     
     @objc func contactbrowser() {
          
@@ -112,7 +71,7 @@ class HomeViewController: UIViewController {
        }
     
     @objc func aboutbrowser() {
-           print("Tap gesture.....")
+         
           /* let obj = self.storyboard?.instantiateViewController(withIdentifier: "WebviewViewController") as! WebviewViewController
            obj.optionSelect = "about"
                   self.navigationController?.pushViewController(obj, animated: true)*/
@@ -120,15 +79,15 @@ class HomeViewController: UIViewController {
 
     
     @objc func deletecoustmer() {
-        
-        
       let obj = self.storyboard?.instantiateViewController(withIdentifier: "CustomerListVC") as! CustomerListVC
+        obj.option = OptionSelected.Customers
                self.navigationController?.pushViewController(obj, animated: true)
     }
     
     @objc func addbill() {
-        print("Tap addbill.....")
-        
+        let obj = self.storyboard?.instantiateViewController(withIdentifier: "CustomerListVC") as! CustomerListVC
+        obj.option = OptionSelected.Owner
+               self.navigationController?.pushViewController(obj, animated: true)
  /*       let obj = self.storyboard?.instantiateViewController(withIdentifier: "AddBillViewController") as! AddBillViewController
    
                self.navigationController?.pushViewController(obj, animated: true)*/
@@ -136,7 +95,6 @@ class HomeViewController: UIViewController {
     
     
     @objc func viewbill() {
-        print("Tap viewbill.....")
      /*   let obj = self.storyboard?.instantiateViewController(withIdentifier: "CoustmerlistViewController") as! CoustmerlistViewController
                obj.optionSelect = "empdesc"
                self.navigationController?.pushViewController(obj, animated: true)*/

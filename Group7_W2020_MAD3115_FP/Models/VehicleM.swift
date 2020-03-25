@@ -15,9 +15,15 @@ struct VehicleM : Codable {
       let topSpeed: Int = 0
       let mileage : Int = 0
         let vehicleType   : VehicleT?
-   
+        let ptype : OptionSelected?
       let vehicleRent : VehicleRentM?
 }
 enum VehicleT: String, Codable {
     case car = "Car", motorcycle = "Motorcycle" , bus = "Bus"
+}
+enum OptionSelected: String,Codable
+{
+    case Customers = "Customers" 
+    case Owner = "Owner"
+    case Driver = "Driver"
 }

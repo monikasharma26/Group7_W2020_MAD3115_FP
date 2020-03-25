@@ -11,6 +11,7 @@ import UIKit
 class CustomerListTVC: UITableViewCell {
     
     // MARK: - Properties
+    
     @IBOutlet var contan_view: UIView!
     @IBOutlet var name_lbl: UILabel!
     @IBOutlet var email_lbl: UILabel!
@@ -33,7 +34,7 @@ class CustomerListTVC: UITableViewCell {
         //
         name_lbl.text = customer.fullName
         email_lbl.text = customer.email ?? ""
-        print(customer.email)
+       
     }
     
     

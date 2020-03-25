@@ -1,0 +1,51 @@
+{
+"Owners": [{
+    "id":         11,
+    "firstName": "Anmol",
+    "lastName" : "Singh",
+    "gender"   : "Female",
+    "birthDate" : 1998,
+    "mobileNumber" : "8557010123",
+    "emailID"    : "anmol@gmail.com",
+    "userName"   : "monika12",
+    "password"    : "monika",
+    "address"     : "Toronto",
+    "city"        : "Toronto",
+    "type"        : "Driver"
+},
+{
+      "id": 12,
+      "firstName": "Aman",
+      "lastName" : "Kaur",
+      "gender"   : "Female" ,
+      "birthDate" : 1999,
+      "mobileNumber" : "8557010123" ,
+      "emailID"    : "kK@gmail.com" ,
+      "userName"   : "kritima",
+      "password"    : "kri123",
+      "address"     : "Toronto",
+      "city"        : "Toronto",
+      "companyTitle" : "LTE",
+      "webSite"       : "WWW.Lte.com",
+      "type"        : "Driver"
+      
+  },
+{
+    "id": 13,
+    "firstName": "Alok",
+    "lastName" : "Sharma",
+    "gender"   : "Female" ,
+    "birthDate" : 1993,
+    "mobileNumber" : "8557010123" ,
+    "emailID"    : "roop@gmail.com" ,
+    "userName"   : "roop",
+    "password"    : "roop123",
+    "address"     : "Toronto",
+    "city"        : "Toronto",
+    "type"        : "Driver"
+}
+
+]
+}
+
+

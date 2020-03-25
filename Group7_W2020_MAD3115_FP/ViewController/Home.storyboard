@@ -33,7 +33,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
-                            <view tag="20" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3eg-yP-T3D" userLabel="View owner">
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3eg-yP-T3D" userLabel="View owner">
                                 <rect key="frame" x="224" y="130" width="170" height="177"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -309,8 +309,8 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9Q-Cv-1s2">
-                                        <rect key="frame" x="61" y="47" width="292" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9Q-Cv-1s2">
+                                        <rect key="frame" x="61" y="71" width="292" height="0.0"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -328,7 +328,7 @@
                                     <constraint firstAttribute="height" constant="84" id="kRA-SZ-5Vx"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pJf-JL-SEZ">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pJf-JL-SEZ" userLabel="BottomView">
                                 <rect key="frame" x="0.0" y="809" width="414" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -371,7 +371,11 @@
                         <viewLayoutGuide key="safeArea" id="1Kq-Vc-6bl"/>
                     </view>
                     <connections>
+                        <outlet property="bottomView" destination="pJf-JL-SEZ" id="c0k-ZC-uqe"/>
+                        <outlet property="btnadd" destination="n6h-ca-b0s" id="VEd-uc-qT3"/>
+                        <outlet property="btndelete" destination="MO3-p9-I9F" id="SLp-vX-nG3"/>
                         <outlet property="custmList_tv" destination="JkJ-XQ-Mox" id="PF2-o7-bSj"/>
+                        <outlet property="lblCust" destination="w9Q-Cv-1s2" id="Eeb-nl-3ev"/>
                         <outlet property="top_view" destination="kVd-ZG-Ags" id="R8J-eT-eNO"/>
                     </connections>
                 </viewController>
@@ -588,7 +592,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Total Bill:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwQ-20-U5I">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwQ-20-U5I">
                                         <rect key="frame" x="-17" y="85" width="264" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="M7d-zN-ITB"/>
@@ -753,7 +757,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Vehicle Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9av-SK-heD">
-                                                            <rect key="frame" x="93" y="46" width="283" height="21"/>
+                                                            <rect key="frame" x="93" y="40" width="283" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="YJT-xG-wPp"/>
                                                             </constraints>

@@ -23,6 +23,32 @@ class Singelton {
         }
         
     }
+    func populateCustomer(optionselect: OptionSelected) {
+           // fetching data from json...
+           switch optionselect {
+           case .Customers:
+               let customers = DataSource.readJsonFileWith(name: "Customer")
+               Singelton.intance.customerArr.removeAll()
+                     for custmer in customers {
+                         Singelton.intance.customerArr.append(CustomersVM(person: custmer))
+                     }
+           case .Owner:
+            let customers = DataSource.readJsonFileWithOwner(name: "Owners")
+                          Singelton.intance.customerArr.removeAll()
+                                for custmer in customers {
+                                    Singelton.intance.customerArr.append(CustomersVM(person: custmer))
+               }
+               case .Driver:
+                          let customers = DataSource.readJsonFileWithOwner(name: "Driver")
+                                                 Singelton.intance.customerArr.removeAll()
+                                                       for custmer in customers {
+                                                           Singelton.intance.customerArr.append(CustomersVM(person: custmer))
+            }
+                     
+           }
+            
+       }
+           
     
    
     

@@ -44,6 +44,7 @@
 		CECDBF54242879E100FA384F /* CustomerDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECDBF53242879E100FA384F /* CustomerDetailVC.swift */; };
 		CECDBF5624287AD900FA384F /* CustomerDetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECDBF5524287AD900FA384F /* CustomerDetailTVC.swift */; };
 		CED68FD1242AA7690011F736 /* Owners.json in Resources */ = {isa = PBXBuildFile; fileRef = CED68FD0242AA7690011F736 /* Owners.json */; };
+		CED69039242B2B180011F736 /* Driver.json in Resources */ = {isa = PBXBuildFile; fileRef = CED69038242B2B180011F736 /* Driver.json */; };
 		CEEC78D42416F12A00757554 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC78D32416F12A00757554 /* AppDelegate.swift */; };
 		CEEC78D62416F12A00757554 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC78D52416F12A00757554 /* SceneDelegate.swift */; };
 		CEEC78D82416F12A00757554 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC78D72416F12A00757554 /* LoginVC.swift */; };
@@ -89,6 +90,7 @@
 		CECDBF53242879E100FA384F /* CustomerDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDetailVC.swift; sourceTree = "<group>"; };
 		CECDBF5524287AD900FA384F /* CustomerDetailTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDetailTVC.swift; sourceTree = "<group>"; };
 		CED68FD0242AA7690011F736 /* Owners.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Owners.json; sourceTree = "<group>"; };
+		CED69038242B2B180011F736 /* Driver.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Driver.json; sourceTree = "<group>"; };
 		CEEC78D02416F12A00757554 /* Group7_W2020_MAD3115_FP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Group7_W2020_MAD3115_FP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEC78D32416F12A00757554 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEEC78D52416F12A00757554 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				CEC0233E24257A360059023A /* Users.plist */,
 				CE35BCB724282F8E005A5BAF /* Customer.json */,
 				CED68FD0242AA7690011F736 /* Owners.json */,
+				CED69038242B2B180011F736 /* Driver.json */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				CEEC78DB2416F12A00757554 /* Welcome.storyboard in Resources */,
 				CECDBF52242878E300FA384F /* Assets.xcassets in Resources */,
 				CEC0233F24257A360059023A /* Users.plist in Resources */,
+				CED69039242B2B180011F736 /* Driver.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

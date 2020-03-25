@@ -72,12 +72,6 @@ extension Person
 }
 
 func initiateVehileClass(vechileM: VehicleM?) {
-    
-var car: Car?
-
- var motorCycle: MotorCycle?
-var bus : Bus?
-
 guard let vechicle = vechileM else {
        //FinalOutput.shared.addNew(text: "Customer has no vehicle.\n")
        return
@@ -85,19 +79,19 @@ guard let vechicle = vechileM else {
     switch vechicle.vehicleType {
        case .car:
             do {
-                    car = Car(varDeObj: vechicle)
+                   //var car = Car(varDeObj: vechicle)
                    // car?.display()
                     
             }
             
         case .motorcycle:
             do {
-                motorCycle = MotorCycle(varDeObj: vechicle)
+             //   motorCycle = MotorCycle(varDeObj: vechicle)
                // motorCycle!.display()
             }
         case .bus:
             do {
-                bus = Bus(varDeObj: vechicle)
+             //   bus = Bus(varDeObj: vechicle)
                // bus!.display()
             }
         case .none:

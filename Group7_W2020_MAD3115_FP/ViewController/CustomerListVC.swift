@@ -7,13 +7,18 @@
 //
 
 import UIKit
-class CustomerListVC: UIViewController {
-
+class CustomerListVC: UIViewController,UITableViewDataSource, UITableViewDelegate {
+    
+    var option : OptionSelected?
     // MARK:- Properties
+    @IBOutlet weak var lblCust: UILabel!
     @IBOutlet var top_view: UIView!
     @IBOutlet var custmList_tv: UITableView!
     
-
+    @IBOutlet weak var bottomView: UIView!
+    @IBOutlet weak var btnadd: UIButton!
+    
+    @IBOutlet weak var btndelete: UIButton!
     // MARK:- Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,9 +26,30 @@ class CustomerListVC: UIViewController {
        
         // register to receive notification...
         NotificationCenter.default.addObserver(self, selector: #selector(CustomerListVC.refresh), name:  Notification.Name("customerListRefresh"), object: nil)
+        loadScreen()
         
     }
-    
+    func loadScreen()
+    {
+        switch option {
+        case .Customers:
+        btnadd.isHidden = false
+        btndelete.isHidden = false
+        lblCust.text = "Cutosmer List"
+        case .Owner:
+            lblCust.text = "Owners List"
+            btndelete.isHidden = true
+            btnadd.isHidden = true
+            case .Driver:
+            lblCust.text = "Drivers List"
+            btndelete.isHidden = true
+            btnadd.isHidden = true
+            
+        default:
+            print("test")
+            
+        }
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
@@ -39,7 +65,17 @@ class CustomerListVC: UIViewController {
     
     // MARK: - Helper
     func initSetup(){
-        Singelton.intance.populateCustomer()
+        switch option {
+        case .Customers:
+            Singelton.intance.populateCustomer(optionselect: OptionSelected.Customers)
+        case .Owner:
+            Singelton.intance.populateCustomer(optionselect: OptionSelected.Owner)
+        case .Driver:
+            Singelton.intance.populateCustomer(optionselect: OptionSelected.Driver)
+        default:
+            print("")
+        }
+       
         
     }
 
@@ -79,6 +115,50 @@ class CustomerListVC: UIViewController {
         
 
     }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+         
+         return Singelton.intance.customerArr.count
+     }
+     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+         
+     let cell = tableView.dequeueReusableCell(withIdentifier: "CustomerListTVC", for: indexPath ) as! CustomerListTVC
+        
+         //
+         let customerData = Singelton.intance.customerArr[indexPath.row]
+         //
+         cell.setDisplay(customer: customerData)
+         return cell
+     }
+     
+     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            return 100
+        }
+     
+     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+      tableView.deselectRow(at: indexPath, animated: true)
+         let storyboard = UIStoryboard(name: "Home", bundle: nil)
+         let vc = storyboard.instantiateViewController(withIdentifier: "CustomerDetailVC") as! CustomerDetailVC
+        switch option {
+        case .Customers:
+            vc.option = OptionSelected.Customers
+        case .Owner:
+            vc.option = OptionSelected.Owner
+        case .Driver:
+            custmList_tv.allowsSelection = true
+            break
+        default:
+            print("")
+        }
+        if( option != OptionSelected.Driver )
+        {
+         vc.custDetailArrInd = indexPath.row
+         self.navigationController?.pushViewController(vc, animated: true)
+        }
+        else
+        {print("")}
+         
+     }
     
 }
 

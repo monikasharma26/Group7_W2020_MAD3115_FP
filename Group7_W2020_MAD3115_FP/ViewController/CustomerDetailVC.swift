@@ -13,7 +13,7 @@ class CustomerDetailVC : UIViewController {
 
     // MARK: - Properties
     var seleInd = -1
-    
+      var option : OptionSelected?
     @IBOutlet weak var ttllbl: UILabel!
     var custmDetail: CustomersVM?
     var custDetailArrInd = Int()
@@ -36,7 +36,7 @@ class CustomerDetailVC : UIViewController {
         super.viewDidLoad()
         //
         initSetup()
-        
+        loadScreen()
         // register to receive notification...
         NotificationCenter.default.addObserver(self, selector: #selector(CustomerDetailVC.refresh), name:  Notification.Name("customerDetailVCRefresh"), object: nil)
         
@@ -48,7 +48,23 @@ class CustomerDetailVC : UIViewController {
     }
    
 
-    
+    func loadScreen()
+    {
+        switch option {
+        case .Customers:
+        total_lbl.isHidden = false
+        ttllbl.isHidden = false
+        case .Owner:
+            total_lbl.text = ""
+            total_lbl.isHidden = true
+            ttllbl.isHidden = true
+        case .Driver:
+            print("")
+        default:
+            print("test")
+            
+        }
+    }
     func initSetup() {
         //
         custmDetail =  Singelton.intance.customerArr[custDetailArrInd]
@@ -71,15 +87,23 @@ class CustomerDetailVC : UIViewController {
         
         billsList = custmDetail?.vehicles
         bill_tv.reloadData()
-        let type = vehcildetails?.vehicleType
-        if(billsList?.count != 0)
+        if(billsList?.count != 0 && option == OptionSelected.Customers)
         {
+            
         totalBills()
         }
         else
         {
+            if(option == OptionSelected.Customers)
+            {
             total_lbl.text = "Customer Has No Vehciles"
              ttllbl.isHidden = false
+            }
+            else
+            {
+                total_lbl.text = "Owner Has a Vehicle"
+                ttllbl.isHidden = true
+            }
         }
     }
     
