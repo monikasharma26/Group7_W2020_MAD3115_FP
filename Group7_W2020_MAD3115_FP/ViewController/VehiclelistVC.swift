@@ -44,7 +44,6 @@ class VehiclelistVC: UIViewController , UITableViewDataSource, UITableViewDelega
            //
            custmDetail =  Singelton.intance.customerArr[custDetailArrInd]
            billsList = custmDetail?.vehicles
-        print("test\(billsList)")
            vehicletbl.reloadData()
         
        }
