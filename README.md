@@ -2,7 +2,7 @@
 # Monika Sharma 
 # Kritima Kukreja
 # Ikroop Virk
-# Philip
+# Philip De Leon
 
 ## Added Below Groups to implement the structure
 
