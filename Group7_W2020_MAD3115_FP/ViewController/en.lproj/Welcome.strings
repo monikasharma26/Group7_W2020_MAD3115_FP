@@ -1,0 +1,48 @@
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "562-2z-OGr"; */
+"562-2z-OGr.placeholder" = "Password";
+
+/* Class = "UILabel"; text = "Don't have an Account?"; ObjectID = "DJL-eL-1zR"; */
+"DJL-eL-1zR.text" = "Don't have an Account?";
+
+/* Class = "UITextField"; placeholder = "Enter Password"; ObjectID = "E1R-4c-qr8"; */
+"E1R-4c-qr8.placeholder" = "Enter Password";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "WTH-oH-G4i"; */
+"WTH-oH-G4i.normalTitle" = "Cancel";
+
+/* Class = "UITextField"; placeholder = "Username"; ObjectID = "X8c-8X-OTD"; */
+"X8c-8X-OTD.placeholder" = "Username";
+
+/* Class = "UITextField"; placeholder = "Enter Full Name"; ObjectID = "cof-wL-yXW"; */
+"cof-wL-yXW.placeholder" = "Enter Full Name";
+
+/* Class = "UIButton"; normalTitle = "Sign Up Here!"; ObjectID = "f6g-Jg-4Pz"; */
+"f6g-Jg-4Pz.normalTitle" = "Sign Up Here!";
+
+/* Class = "UIButton"; normalTitle = "SIGN IN"; ObjectID = "iwQ-Bp-Ncq"; */
+"iwQ-Bp-Ncq.normalTitle" = "SIGN IN";
+
+/* Class = "UILabel"; text = "Login to your account"; ObjectID = "kKM-eJ-gKK"; */
+"kKM-eJ-gKK.text" = "Login to your account";
+
+/* Class = "UILabel"; text = "SignUp "; ObjectID = "mnX-ZJ-K0g"; */
+"mnX-ZJ-K0g.text" = "SignUp ";
+
+/* Class = "UITextField"; placeholder = "Enter Email ID"; ObjectID = "njh-hz-crm"; */
+"njh-hz-crm.placeholder" = "Enter Email ID";
+
+/* Class = "UIButton"; normalTitle = "Click here to Login!"; ObjectID = "rLN-zI-MIQ"; */
+"rLN-zI-MIQ.normalTitle" = "Click here to Login!";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "xnA-xj-6Z8"; */
+"xnA-xj-6Z8.normalTitle" = "Save";
+
+/* Class = "UITextField"; placeholder = "Confirm Password"; ObjectID = "yE6-zT-E2k"; */
+"yE6-zT-E2k.placeholder" = "Confirm Password";
+
+/* Class = "UIButton"; normalTitle = "  Remember me"; ObjectID = "yjs-wg-bZT"; */
+"yjs-wg-bZT.normalTitle" = "  Remember me";
+
+/* Class = "UILabel"; text = "Sign in"; ObjectID = "ym6-37-58R"; */
+"ym6-37-58R.text" = "Sign in";

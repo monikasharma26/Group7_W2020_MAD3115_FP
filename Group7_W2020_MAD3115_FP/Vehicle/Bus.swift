@@ -10,7 +10,7 @@ import Foundation
 
 class Bus : Vehicle
 {
-
+/*
 var vehicleIdentificationNumber: String
  
  var vehicleDescription: String
@@ -64,5 +64,7 @@ init(varDeObj: VehicleM)
                   }
             self.details = vechi
             
-            }
-}
+
+ }
+*/
+ }

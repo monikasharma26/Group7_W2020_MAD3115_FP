@@ -39,13 +39,12 @@ class CustomerDetailTVC: UITableViewCell {
         // MARK: - Helper
         func setDisplay(vehicle: VehicleM) {
             
-            //  case car = "Car", motorcycle = "Motorcycle" , bus = "Bus"
             let type = vehicle.vehicleType
             if type == VehicleT.car{
                 type_img.image = UIImage(named: "car-3")
-                descp_lbl.text = "ManuFacture Name: \(vehicle.manufacturerName ) \nID Num: \(vehicle.vehicleIdentificationNumber ) \nCar Color: \(vehicle.carColor ) \nvehicleDescription: \(vehicle.vehicleDescription )  \nFuel Type: \(vehicle.fuelType ) \nNumber of Seats: \(vehicle.noOfSeat)"
+                descp_lbl.text = "ManuFacture Name: \(String(describing: vehicle.manufacturerName!) ) \nID Num: \(vehicle.vehicleIdentificationNumber! ) \nCar Color: \(vehicle.carColor! ) \nvehicleDescription: \(vehicle.vehicleDescription! )  \nFuel Type: \(vehicle.fuelType! ) \nNumber of Seats: \(vehicle.noOfSeat!)"
                 day_lbl.text = "Car"
-                type_lbl.text =   "\(vehicle.carType)"
+                type_lbl.text =   "\(vehicle.carType!)"
                 if vehicle.ptype == OptionSelected.Customers {
                     bill_lbl.text = "$1343.00"
                 }
@@ -57,9 +56,9 @@ class CustomerDetailTVC: UITableViewCell {
             }
             else if type == VehicleT.bus {
                 type_img.image = UIImage(named: "bus")
-                descp_lbl.text = "ManuFacture Name: \(vehicle.manufacturerName ) \nID Num: \(vehicle.vehicleIdentificationNumber ) \nBus Color: \(vehicle.carColor ) \nvehicleDescription: \(vehicle.vehicleDescription )  \nFuel Type: \(vehicle.fuelType ) \nNumber of Seats: \(vehicle.noOfSeat)"
+                descp_lbl.text = "ManuFacture Name: \(vehicle.manufacturerName! ) \nID Num: \(vehicle.vehicleIdentificationNumber! ) \nBus Color: \(vehicle.carColor! ) \nvehicleDescription: \(vehicle.vehicleDescription! )  \nFuel Type: \(vehicle.fuelType! ) \nNumber of Seats: \(vehicle.noOfSeat!)"
                 day_lbl.text = "Bus"
-                type_lbl.text =   "\(vehicle.carType)"
+                type_lbl.text =   "\(vehicle.carType!)"
                if vehicle.ptype == OptionSelected.Customers {
                                    bill_lbl.text = "$1343.00"
                                }
@@ -71,9 +70,9 @@ class CustomerDetailTVC: UITableViewCell {
             else
             {
                 type_img.image = UIImage(named: "motocycle")
-                descp_lbl.text = "ManuFacture Name: \(vehicle.manufacturerName ) \nID Num: \(vehicle.vehicleIdentificationNumber ) \nMotorCycle Color: \(vehicle.carColor ) \nvehicleDescription: \(vehicle.vehicleDescription )  \nFuel Type: \(vehicle.fuelType ) \nNumber of Seats: \(vehicle.noOfSeat)"
+                descp_lbl.text = "ManuFacture Name: \(vehicle.manufacturerName! ) \nID Num: \(vehicle.vehicleIdentificationNumber! ) \nMotorCycle Color: \(vehicle.carColor!) \nvehicleDescription: \(vehicle.vehicleDescription!)  \nFuel Type: \(vehicle.fuelType!) \nNumber of Seats: \(vehicle.noOfSeat!)"
                  day_lbl.text = "MotorCycle"
-                 type_lbl.text =   "\(vehicle.carType)"
+                 type_lbl.text =   "\(vehicle.carType!)"
                 if vehicle.ptype == OptionSelected.Customers {
                                     bill_lbl.text = "$1343.00"
                                 }

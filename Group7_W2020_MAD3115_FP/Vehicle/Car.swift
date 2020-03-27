@@ -9,25 +9,8 @@
 import Foundation
 class Car: Vehicle
 {
-    var vehicleIdentificationNumber: String
-       
-       var vehicleDescription: String
-       
-       var manufacturerName: String
-       
-       var isSelfDrive: Bool
-       
-       var isInsured: Bool
-       
-       var noOfSeat: Int
-       
-       var fuelType: String
-       
-       var vehicleType: VehicleT
-       
-       
       // var carType: CarType?
-       
+ /*
        var carColor: String
        
     //   var baseRate : Int
@@ -70,5 +53,5 @@ init(varDeObj: VehicleM)
           }
        self.details = vechi
           
-      }
+      }*/
 }

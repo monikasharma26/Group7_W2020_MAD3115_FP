@@ -11,6 +11,8 @@ class Singelton {
     
     static let intance = Singelton()
     var employeeArr = [Person]()
+    var vehicleArr = [VehicleM]()
+    var vehiclte = [VehicleAdd]()
     private init(){}
     var customerArr = [CustomersVM]()
     

@@ -69,7 +69,7 @@ class CustomerDetailVC : UIViewController {
         //
         custmDetail =  Singelton.intance.customerArr[custDetailArrInd]
         // 1.
-        let date = Date() // save date, so all components use the same date
+        let date = Date()
         // date
         let dformatter = DateFormatter()
         dformatter.dateFormat = "d MMM"
@@ -81,8 +81,8 @@ class CustomerDetailVC : UIViewController {
         let stDay = eformatter.string(from: date)
         
         titleDate_lbl.text = String(format: "%@, %@", stDay, stDate)
-        customerN_lbl.text = custmDetail?.fullName
-        email_lbl.text = custmDetail?.email
+        customerN_lbl.text = custmDetail!.fullName
+        email_lbl.text = custmDetail!.email
         
         
         billsList = custmDetail?.vehicles

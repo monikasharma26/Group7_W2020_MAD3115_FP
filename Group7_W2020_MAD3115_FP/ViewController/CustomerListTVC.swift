@@ -20,8 +20,6 @@ class CustomerListTVC: UITableViewCell {
     // MARK: - Life Cycle
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-       // contan_view.addBorder(view: contan_view, radius: 8.0, width: 1, color: UIColor.lightGray.cgColor)
         
     }
 

@@ -44,7 +44,7 @@
       "vehicle": [{
          "vehicleIdentificationNumber": "G1WL52M1W1104808",
           "vehicleDescription" : "MotorCycle",
-          "manufacturerName" : "Honda",
+          "manufacturerName" : "Mercedes",
           "isSelfDrive" : true,
           "isInsured" : false,
           "noOfSeat"  : 2,
@@ -71,7 +71,7 @@
     "vehicle": [{
        "vehicleIdentificationNumber": "G1WL52M1W1104808",
            "vehicleDescription" : "Bus",
-           "manufacturerName" : "TATA",
+           "manufacturerName" : "BMW",
            "isSelfDrive" : true,
            "isInsured" : false,
            "noOfSeat"  : 25,

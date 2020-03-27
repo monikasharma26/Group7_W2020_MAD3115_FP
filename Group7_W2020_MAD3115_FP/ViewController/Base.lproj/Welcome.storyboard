@@ -222,10 +222,10 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="102.45535714285714"/>
         </scene>
-        <!--Sign Up View Controller-->
+        <!--Sign UpVC-->
         <scene sceneID="bAP-L3-LJr">
             <objects>
-                <viewController storyboardIdentifier="SignUpVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Qn2-xK-qxU" customClass="SignUpViewController" customModule="Group3_F2019_MAD3115_FP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Qn2-xK-qxU" customClass="SignUpVC" customModule="Group7_W2020_MAD3115_FP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Kj-EZ-rXW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -266,17 +266,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnA-xj-6Z8">
-                                <rect key="frame" x="174" y="506" width="52" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Save">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnSignUp:" destination="Qn2-xK-qxU" eventType="touchUpInside" id="S3J-JT-hcy"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLN-zI-MIQ">
                                 <rect key="frame" x="96" y="736" width="222" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -284,9 +273,6 @@
                                 <state key="normal" title="Click here to Login!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="btnGoToLoginScreen:" destination="Qn2-xK-qxU" eventType="touchUpInside" id="xlQ-Pq-Bm4"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SignUp " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnX-ZJ-K0g">
                                 <rect key="frame" x="148" y="93" width="119" height="42"/>
@@ -296,6 +282,28 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTH-oH-G4i">
+                                <rect key="frame" x="104" y="511" width="73" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnCancel:" destination="Qn2-xK-qxU" eventType="touchUpInside" id="apd-vC-9NR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnA-xj-6Z8">
+                                <rect key="frame" x="244" y="511" width="52" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnsave:" destination="Qn2-xK-qxU" eventType="touchUpInside" id="ppZ-id-LTc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.30196078431372547" green="0.67843137254901964" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -316,10 +324,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="dkP-80-rFw"/>
                     <connections>
-                        <outlet property="regEmailID" destination="njh-hz-crm" id="wbz-Yh-Whs"/>
-                        <outlet property="txtName" destination="cof-wL-yXW" id="fGo-zK-PQO"/>
-                        <outlet property="txtSuCPassword" destination="yE6-zT-E2k" id="PI5-2p-hRU"/>
-                        <outlet property="txtSuPassword" destination="E1R-4c-qr8" id="uFU-4u-gXj"/>
+                        <outlet property="txtEmailID" destination="njh-hz-crm" id="DbA-Ol-xxM"/>
+                        <outlet property="txtFullName" destination="cof-wL-yXW" id="Kai-ie-oJK"/>
+                        <outlet property="txtPass" destination="E1R-4c-qr8" id="vuF-vv-goC"/>
+                        <outlet property="txtREPSw" destination="yE6-zT-E2k" id="n1j-dN-SGh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1iJ-Hr-bEL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

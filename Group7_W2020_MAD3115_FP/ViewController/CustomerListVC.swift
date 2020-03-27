@@ -10,6 +10,7 @@ import UIKit
 class CustomerListVC: UIViewController,UITableViewDataSource, UITableViewDelegate {
     
     var option : OptionSelected?
+    var selextedtxt:String?
     // MARK:- Properties
     @IBOutlet weak var lblCust: UILabel!
     @IBOutlet var top_view: UIView!
@@ -95,20 +96,18 @@ class CustomerListVC: UIViewController,UITableViewDataSource, UITableViewDelegat
         if(self.custmList_tv.isEditing == true)
         {
             self.custmList_tv.isEditing = false
-         // btnDeleteCustomer.titleLabel?.text="Delete"
         }
         else
         {
             self.custmList_tv.isEditing = true
-         //  .titleLabel?.text="Done"
 
         }
     }
    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            let count = Singelton.intance.customerArr.count
-            let customerData = Singelton.intance.customerArr.remove(at: indexPath.row)
+            _ = Singelton.intance.customerArr.count
+            _ = Singelton.intance.customerArr.remove(at: indexPath.row)
             self.custmList_tv.deleteRows(at: [indexPath], with: .fade)
             
         }
@@ -138,7 +137,7 @@ class CustomerListVC: UIViewController,UITableViewDataSource, UITableViewDelegat
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
       tableView.deselectRow(at: indexPath, animated: true)
          let storyboard = UIStoryboard(name: "Home", bundle: nil)
-         let vc = storyboard.instantiateViewController(withIdentifier: "CustomerDetailVC") as! CustomerDetailVC
+          let vc = storyboard.instantiateViewController(withIdentifier: "CustomerDetailVC") as! CustomerDetailVC
         switch option {
         case .Customers:
             vc.option = OptionSelected.Customers
@@ -150,13 +149,18 @@ class CustomerListVC: UIViewController,UITableViewDataSource, UITableViewDelegat
         default:
             print("")
         }
-        if( option != OptionSelected.Driver )
+        if( option != OptionSelected.Driver && selextedtxt != "Vehicles" )
         {
          vc.custDetailArrInd = indexPath.row
          self.navigationController?.pushViewController(vc, animated: true)
         }
-        else
-        {print("")}
+        else if(selextedtxt == "Vehicles" && option == OptionSelected.Owner)
+            {
+                let vc = storyboard.instantiateViewController(withIdentifier: "VehiclelistVC") as! VehiclelistVC
+                        vc.custDetailArrInd = indexPath.row
+                    self.navigationController?.pushViewController(vc, animated: true)
+        }
+       
          
      }
     

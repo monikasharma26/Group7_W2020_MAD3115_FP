@@ -65,8 +65,6 @@ class AddCustomerVC: UIViewController {
             UIAlertAction in
              self.dismiss(animated: true, completion: nil)
         }
-        
-        // Add the actions
         alertController.addAction(okAction)
         
         // Present the controller

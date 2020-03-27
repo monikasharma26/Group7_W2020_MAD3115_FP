@@ -8,16 +8,34 @@
 
 import Foundation
 
-protocol Vehicle {
+class Vehicle{
     
- var vehicleIdentificationNumber: String {get set}
-    var vehicleDescription: String {get set}
-    var manufacturerName: String    {get set}
-    var isSelfDrive: Bool            {get set}
-    var isInsured: Bool               {get set}
-    var noOfSeat: Int                   {get set}
-    var fuelType: String     {get set}
-    var vehicleType: VehicleT  {get set}
+ var vehicleIdentificationNumber: String?
+    var vehicleDescription: String?
+    var manufacturerName: String?
+    var isSelfDrive: Bool?
+    var isInsured: Bool?
+    var noOfSeat: Int?
+    var fuelType: String?
+    var vehicleType: VehicleT?
+    
+  
+    init(vehicleIdentificationNumber: String, vehicleDescription: String, manufacturerName: String, isSelfDrive: Bool, isInsured: Bool, noOfSeat:Int, fuelType: String)
+    {
+        self.vehicleDescription = vehicleIdentificationNumber
+        self.vehicleDescription = vehicleDescription
+        self.manufacturerName = manufacturerName
+        self.isSelfDrive = isSelfDrive
+        self.isInsured = isInsured
+        self.noOfSeat = noOfSeat
+        self.fuelType = fuelType
+    }
+    
+    init(compnayName: String, manufacturerName: String, vehicleType : VehicleT) {
+        self.vehicleDescription = compnayName
+        self.manufacturerName = manufacturerName
+        self.vehicleType = vehicleType
+    }
 
 }
     

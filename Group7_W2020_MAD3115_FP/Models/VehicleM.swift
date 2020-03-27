@@ -8,15 +8,15 @@
 
 import Foundation
 struct VehicleM : Codable {
-   let vehicleIdentificationNumber, vehicleDescription, manufacturerName: String
-      let isSelfDrive, isInsured: Bool
-      let noOfSeat: Int
-      let fuelType,carType,carColor : String
-      let topSpeed: Int = 0
-      let mileage : Int = 0
-        let vehicleType   : VehicleT?
-        let ptype : OptionSelected?
-      let vehicleRent : VehicleRentM?
+   var vehicleIdentificationNumber, vehicleDescription, manufacturerName: String?
+      var isSelfDrive, isInsured: Bool?
+      var noOfSeat: Int?
+      var fuelType,carType,carColor : String?
+      var topSpeed: Int?
+      var mileage : Int?
+        var vehicleType   : VehicleT?
+        var ptype : OptionSelected?
+      var vehicleRent : VehicleRentM?
 }
 enum VehicleT: String, Codable {
     case car = "Car", motorcycle = "Motorcycle" , bus = "Bus"

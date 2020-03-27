@@ -59,22 +59,18 @@ class HomeViewController: UIViewController {
     
     @objc func addvehicle() {
      let obj = self.storyboard?.instantiateViewController(withIdentifier: "CustomerListVC") as! CustomerListVC
-     obj.option = OptionSelected.Driver
+        obj.option = OptionSelected.Driver
             self.navigationController?.pushViewController(obj, animated: true)
        }
     
     @objc func contactbrowser() {
-         
-        /*   let obj = self.storyboard?.instantiateViewController(withIdentifier: "WebviewViewController") as! WebviewViewController
-           obj.optionSelect = "contact"
-                  self.navigationController?.pushViewController(obj, animated: true)*/
+        let obj = self.storyboard?.instantiateViewController(withIdentifier: "AboutUsVC") as! AboutUsVC
+                      self.navigationController?.pushViewController(obj, animated: true)
        }
     
     @objc func aboutbrowser() {
-         
-          /* let obj = self.storyboard?.instantiateViewController(withIdentifier: "WebviewViewController") as! WebviewViewController
-           obj.optionSelect = "about"
-                  self.navigationController?.pushViewController(obj, animated: true)*/
+     let obj = self.storyboard?.instantiateViewController(withIdentifier: "ContacttusVC") as! ContacttusVC
+       self.navigationController?.pushViewController(obj, animated: true)
        }
 
     
@@ -88,16 +84,14 @@ class HomeViewController: UIViewController {
         let obj = self.storyboard?.instantiateViewController(withIdentifier: "CustomerListVC") as! CustomerListVC
         obj.option = OptionSelected.Owner
                self.navigationController?.pushViewController(obj, animated: true)
- /*       let obj = self.storyboard?.instantiateViewController(withIdentifier: "AddBillViewController") as! AddBillViewController
-   
-               self.navigationController?.pushViewController(obj, animated: true)*/
     }
     
     
     @objc func viewbill() {
-     /*   let obj = self.storyboard?.instantiateViewController(withIdentifier: "CoustmerlistViewController") as! CoustmerlistViewController
-               obj.optionSelect = "empdesc"
-               self.navigationController?.pushViewController(obj, animated: true)*/
+       let obj = self.storyboard?.instantiateViewController(withIdentifier: "CustomerListVC") as! CustomerListVC
+           obj.option = OptionSelected.Owner
+        obj.selextedtxt = "Vehicles"
+                  self.navigationController?.pushViewController(obj, animated: true)
     }
     
     @IBAction func but_backhome(_ sender: Any) {

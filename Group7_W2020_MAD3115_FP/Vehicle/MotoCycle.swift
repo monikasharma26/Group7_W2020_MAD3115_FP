@@ -46,28 +46,4 @@ class MotorCycle
            self.milage = milage
          }
     
-    init(varDeObj: VehicleM)
-             {
-               self.vehicleIdentificationNumber = varDeObj.vehicleIdentificationNumber
-               self.vehicleDescription = varDeObj.vehicleDescription
-               self.manufacturerName = varDeObj.manufacturerName
-               self.isSelfDrive = varDeObj.isSelfDrive
-               self.isInsured = varDeObj.isInsured
-               self.noOfSeat = varDeObj.noOfSeat
-               self.fuelType = varDeObj.fuelType
-               self.vehicleType = varDeObj.vehicleType!
-            //self.baseRate =
-            // self.ratePerKm = varDeObj.vehicleRent!.ratePerKm
-               self.topSpeed = varDeObj.topSpeed
-               self.topSpeed = 70
-               self.milage = varDeObj.mileage
-               self.milage = 42
-               
-               guard let vechi = varDeObj.vehicleRent else {
-                  // FinalOutput.shared.addNew(text: "")
-                   return
-               }
-               self.details = vechi
-               
-               }
 }

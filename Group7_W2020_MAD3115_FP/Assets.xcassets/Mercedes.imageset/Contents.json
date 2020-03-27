@@ -2,17 +2,15 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "smartphone-call.png",
+      "filename" : "Mercedes.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "smartphone-call copy.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "smartphone-call copy 2.png",
       "scale" : "3x"
     }
   ],
